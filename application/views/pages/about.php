@@ -20,7 +20,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-image">
-                            <img src="assets/img/about.jpg" alt="image">
+                            <img src="<?=base_url()?>assets/img/about.jpg" alt="image">
                         </div>
                     </div>
 
@@ -53,7 +53,7 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="team-item">
                             <div class="image">
-                                <img src="assets/img/team/team1.jpg" alt="image">
+                                <img src="<?=base_url()?>assets/img/team/team1.jpg" alt="image">
 
                                 <ul class="social">
                                     <li>
@@ -88,7 +88,7 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="team-item">
                             <div class="image">
-                                <img src="assets/img/team/team2.jpg" alt="image">
+                                <img src="<?=base_url()?>assets/img/team/team2.jpg" alt="image">
 
                                 <ul class="social">
                                     <li>
@@ -123,7 +123,7 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="team-item">
                             <div class="image">
-                                <img src="assets/img/team/team3.jpg" alt="image">
+                                <img src="<?=base_url()?>assets/img/team/team3.jpg" alt="image">
 
                                 <ul class="social">
                                     <li>
@@ -158,7 +158,7 @@
                     <div class="col-lg-3 col-sm-6">
                         <div class="team-item">
                             <div class="image">
-                                <img src="assets/img/team/team4.jpg" alt="image">
+                                <img src="<?=base_url()?>assets/img/team/team4.jpg" alt="image">
 
                                 <ul class="social">
                                     <li>
@@ -280,7 +280,7 @@
                             </ul>
                         </div>
                         <div class="clients-info">
-                            <img src="assets/img/client/client1.jpg" alt="image">
+                            <img src="<?=base_url()?>assets/img/client/client1.jpg" alt="image">
                             <h3>Daniel Mack</h3>
                             <span>Designer</span>
                         </div>
@@ -311,7 +311,7 @@
                             </ul>
                         </div>
                         <div class="clients-info">
-                            <img src="assets/img/client/client2.jpg" alt="image">
+                            <img src="<?=base_url()?>assets/img/client/client2.jpg" alt="image">
                             <h3>John Donald</h3>
                             <span>Corporate</span>
                         </div>
@@ -342,7 +342,7 @@
                             </ul>
                         </div>
                         <div class="clients-info">
-                            <img src="assets/img/client/client3.jpg" alt="image">
+                            <img src="<?=base_url()?>assets/img/client/client3.jpg" alt="image">
                             <h3>Andrew Mathes</h3>
                             <span>Manager</span>
                         </div>
@@ -358,37 +358,37 @@
                 <div class="partner-slider owl-carousel owl-theme">
                     <div class="partner-item">
                         <a href="#">
-                            <img src="assets/img/partner/partner1.png" alt="image">
+                            <img src="<?=base_url()?>assets/img/partner/partner1.png" alt="image">
                         </a>
                     </div>
 
                     <div class="partner-item">
                         <a href="#">
-                            <img src="assets/img/partner/partner2.png" alt="image">
+                            <img src="<?=base_url()?>assets/img/partner/partner2.png" alt="image">
                         </a>
                     </div>
 
                     <div class="partner-item">
                         <a href="#">
-                            <img src="assets/img/partner/partner3.png" alt="image">
+                            <img src="<?=base_url()?>assets/img/partner/partner3.png" alt="image">
                         </a>
                     </div>
 
                     <div class="partner-item">
                         <a href="#">
-                            <img src="assets/img/partner/partner4.png" alt="image">
+                            <img src="<?=base_url()?>assets/img/partner/partner4.png" alt="image">
                         </a>
                     </div>
 
                     <div class="partner-item">
                         <a href="#">
-                            <img src="assets/img/partner/partner5.png" alt="image">
+                            <img src="<?=base_url()?>assets/img/partner/partner5.png" alt="image">
                         </a>
                     </div>
 
                     <div class="partner-item">
                         <a href="#">
-                            <img src="assets/img/partner/partner6.png" alt="image">
+                            <img src="<?=base_url()?>assets/img/partner/partner6.png" alt="image">
                         </a>
                     </div>
                 </div>
@@ -419,7 +419,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6 col-md-6">
                             <div class="products-image">
-                                <img src="assets/img/quick-view-img.jpg" alt="image">
+                                <img src="<?=base_url()?>assets/img/quick-view-img.jpg" alt="image">
                             </div>
                         </div>
 

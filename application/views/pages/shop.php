@@ -45,8 +45,8 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="products-item">
                             <div class="image">
-                                <a href="products-details.html">
-                                    <img src="assets/img/top-trending/image1.jpg" alt="image">
+                                <a href="<?=base_url('Shop/productDetails')?>">
+                                    <img src="<?=base_url()?>assets/img/top-trending/image1.jpg" alt="image">
                                 </a>
 
                                 <ul class="social">
@@ -83,7 +83,7 @@
 
                             <div class="content">
                                 <h3>
-                                    <a href="products-details.html">Make Up</a>
+                                    <a href="<?=base_url('Shop/productDetails')?>">Make Up</a>
                                 </h3>
                                 <span>$60.00</span>
                                 <ul class="star-list">
@@ -110,8 +110,8 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="products-item">
                             <div class="image">
-                                <a href="products-details.html">
-                                    <img src="assets/img/top-trending/image2.jpg" alt="image">
+                                <a href="<?=base_url('Shop/productDetails')?>">
+                                    <img src="<?=base_url()?>assets/img/top-trending/image2.jpg" alt="image">
                                 </a>
 
                                 <ul class="social">
@@ -148,7 +148,7 @@
 
                             <div class="content">
                                 <h3>
-                                    <a href="products-details.html">Shoes</a>
+                                    <a href="<?=base_url('Shop/productDetails')?>">Shoes</a>
                                 </h3>
                                 <span>$75.00</span>
                                 <ul class="star-list">
@@ -175,8 +175,8 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="products-item">
                             <div class="image">
-                                <a href="products-details.html">
-                                    <img src="assets/img/top-trending/image3.jpg" alt="image">
+                                <a href="<?=base_url('Shop/productDetails')?>">
+                                    <img src="<?=base_url()?>assets/img/top-trending/image3.jpg" alt="image">
                                 </a>
 
                                 <ul class="social">
@@ -213,7 +213,7 @@
 
                             <div class="content">
                                 <h3>
-                                    <a href="products-details.html">Gents T-Shirt</a>
+                                    <a href="<?=base_url('Shop/productDetails')?>">Gents T-Shirt</a>
                                 </h3>
                                 <span>$55.00</span>
                                 <ul class="star-list">
@@ -240,8 +240,8 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="products-item">
                             <div class="image">
-                                <a href="products-details.html">
-                                    <img src="assets/img/top-trending/image4.jpg" alt="image">
+                                <a href="<?=base_url('Shop/productDetails')?>">
+                                    <img src="<?=base_url()?>assets/img/top-trending/image4.jpg" alt="image">
                                 </a>
 
                                 <ul class="social">
@@ -278,7 +278,7 @@
 
                             <div class="content">
                                 <h3>
-                                    <a href="products-details.html">Women’s Kurti</a>
+                                    <a href="<?=base_url('Shop/productDetails')?>">Women’s Kurti</a>
                                 </h3>
                                 <span>$65.00</span>
                                 <ul class="star-list">
@@ -305,8 +305,8 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="products-item">
                             <div class="image">
-                                <a href="products-details.html">
-                                    <img src="assets/img/top-trending/image5.jpg" alt="image">
+                                <a href="<?=base_url('Shop/productDetails')?>">
+                                    <img src="<?=base_url()?>assets/img/top-trending/image5.jpg" alt="image">
                                 </a>
 
                                 <ul class="social">
@@ -343,7 +343,7 @@
 
                             <div class="content">
                                 <h3>
-                                    <a href="products-details.html">T-Shirt</a>
+                                    <a href="<?=base_url('Shop/productDetails')?>">T-Shirt</a>
                                 </h3>
                                 <span>$75.00</span>
                                 <ul class="star-list">
@@ -370,8 +370,8 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="products-item">
                             <div class="image">
-                                <a href="products-details.html">
-                                    <img src="assets/img/top-trending/image6.jpg" alt="image">
+                                <a href="<?=base_url('Shop/productDetails')?>">
+                                    <img src="<?=base_url()?>assets/img/top-trending/image6.jpg" alt="image">
                                 </a>
 
                                 <ul class="social">
@@ -408,7 +408,7 @@
 
                             <div class="content">
                                 <h3>
-                                    <a href="products-details.html">Kids Clothes</a>
+                                    <a href="<?=base_url('Shop/productDetails')?>">Kids Clothes</a>
                                 </h3>
                                 <span>$85.00</span>
                                 <ul class="star-list">
@@ -435,8 +435,8 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="products-item">
                             <div class="image">
-                                <a href="products-details.html">
-                                    <img src="assets/img/special-products/ring1.jpg" alt="image">
+                                <a href="<?=base_url('Shop/productDetails')?>">
+                                    <img src="<?=base_url()?>assets/img/special-products/ring1.jpg" alt="image">
                                 </a>
 
                                 <ul class="social">
@@ -473,7 +473,7 @@
 
                             <div class="content">
                                 <h3>
-                                    <a href="products-details.html">Engagement Ring</a>
+                                    <a href="<?=base_url('Shop/productDetails')?>">Engagement Ring</a>
                                 </h3>
                                 <span>$165.00</span>
                                 <ul class="star-list">
@@ -500,8 +500,8 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="products-item">
                             <div class="image">
-                                <a href="products-details.html">
-                                    <img src="assets/img/special-products/ring5.jpg" alt="image">
+                                <a href="<?=base_url('Shop/productDetails')?>">
+                                    <img src="<?=base_url()?>assets/img/special-products/ring5.jpg" alt="image">
                                 </a>
 
                                 <ul class="social">
@@ -538,7 +538,7 @@
 
                             <div class="content">
                                 <h3>
-                                    <a href="products-details.html">Armour Ring</a>
+                                    <a href="<?=base_url('Shop/productDetails')?>">Armour Ring</a>
                                 </h3>
                                 <span>$175.00</span>
                                 <ul class="star-list">
@@ -565,8 +565,8 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="products-item">
                             <div class="image">
-                                <a href="products-details.html">
-                                    <img src="assets/img/special-products/ring6.jpg" alt="image">
+                                <a href="<?=base_url('Shop/productDetails')?>">
+                                    <img src="<?=base_url()?>assets/img/special-products/ring6.jpg" alt="image">
                                 </a>
 
                                 <ul class="social">
@@ -603,7 +603,7 @@
 
                             <div class="content">
                                 <h3>
-                                    <a href="products-details.html">Mourning Ring</a>
+                                    <a href="<?=base_url('Shop/productDetails')?>">Mourning Ring</a>
                                 </h3>
                                 <span>$185.00</span>
                                 <ul class="star-list">
@@ -630,8 +630,8 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="products-item">
                             <div class="image">
-                                <a href="products-details.html">
-                                    <img src="assets/img/products/products1.jpg" alt="image">
+                                <a href="<?=base_url('Shop/productDetails')?>">
+                                    <img src="<?=base_url()?>assets/img/products/products1.jpg" alt="image">
                                 </a>
 
                                 <ul class="social">
@@ -668,7 +668,7 @@
 
                             <div class="content">
                                 <h3>
-                                    <a href="products-details.html">Ceramic Tea</a>
+                                    <a href="<?=base_url('Shop/productDetails')?>">Ceramic Tea</a>
                                 </h3>
                                 <span>$160.00</span>
                                 <ul class="star-list">
@@ -695,8 +695,8 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="products-item">
                             <div class="image">
-                                <a href="products-details.html">
-                                    <img src="assets/img/products/products2.jpg" alt="image">
+                                <a href="<?=base_url('Shop/productDetails')?>">
+                                    <img src="<?=base_url()?>assets/img/products/products2.jpg" alt="image">
                                 </a>
 
                                 <ul class="social">
@@ -733,7 +733,7 @@
 
                             <div class="content">
                                 <h3>
-                                    <a href="products-details.html">Flower Vase</a>
+                                    <a href="<?=base_url('Shop/productDetails')?>">Flower Vase</a>
                                 </h3>
                                 <span>$55.00</span>
                                 <ul class="star-list">
@@ -760,8 +760,8 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="products-item">
                             <div class="image">
-                                <a href="products-details.html">
-                                    <img src="assets/img/products/products3.jpg" alt="image">
+                                <a href="<?=base_url('Shop/productDetails')?>">
+                                    <img src="<?=base_url()?>assets/img/products/products3.jpg" alt="image">
                                 </a>
 
                                 <ul class="social">
@@ -798,7 +798,7 @@
 
                             <div class="content">
                                 <h3>
-                                    <a href="products-details.html">Ceramic Bowl</a>
+                                    <a href="<?=base_url('Shop/productDetails')?>">Ceramic Bowl</a>
                                 </h3>
                                 <span>$155.00</span>
                                 <ul class="star-list">
@@ -891,238 +891,7 @@
                 </div>
             </div>
         </section>
-        <!-- End Discover Area -->
-
-        <!-- Start Instagram Area -->
-        <!-- <section class="instagram-area">
-            <div class="container-fluid">
-                <div class="instagram-slides owl-carousel owl-theme">
-                    <div class="instagram-post">
-                        <img src="assets/img/instagram/image1.jpg" alt="image">
-                        <i class='bx bxl-instagram'></i>
-                        <a href="#" target="_blank" class="link-btn"></a>
-                    </div>
-
-                    <div class="instagram-post">
-                        <img src="assets/img/instagram/image2.jpg" alt="image">
-                        <i class='bx bxl-instagram'></i>
-                        <a href="#" target="_blank" class="link-btn"></a>
-                    </div>
-
-                    <div class="instagram-post">
-                        <img src="assets/img/instagram/image3.jpg" alt="image">
-                        <i class='bx bxl-instagram'></i>
-                        <a href="#" target="_blank" class="link-btn"></a>
-                    </div>
-
-                    <div class="instagram-post">
-                        <img src="assets/img/instagram/image4.jpg" alt="image">
-                        <i class='bx bxl-instagram'></i>
-                        <a href="#" target="_blank" class="link-btn"></a>
-                    </div>
-
-                    <div class="instagram-post">
-                        <img src="assets/img/instagram/image5.jpg" alt="image">
-                        <i class='bx bxl-instagram'></i>
-                        <a href="#" target="_blank" class="link-btn"></a>
-                    </div>
-
-                    <div class="instagram-post">
-                        <img src="assets/img/instagram/image6.jpg" alt="image">
-                        <i class='bx bxl-instagram'></i>
-                        <a href="#" target="_blank" class="link-btn"></a>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- End Instagram Area -->
-
-        <!-- Start Footer Area -->
-       <!--  <section class="footer-area pt-100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="single-footer-widget">
-                            <div class="footer-logo">
-                                <a href="#">
-                                    <img src="assets/img/white-logo.png" alt="image">
-                                </a>
-                            </div>
-    
-                            <ul class="footer-contact-info">
-                                <li>
-                                    <i class='flaticon-phone-call'></i> 
-                                    <span>Phone</span>
-                                    <a href="tel:882569756">882-569-756</a>
-                                </li>
-                                <li>
-                                    <i class='flaticon-email-1'></i> 
-                                    <span>Email</span>
-                                    <a href="mailto:hello@xenoz.com">hello@xenoz.com</a>
-                                </li>
-                                <li>
-                                    <i class='flaticon-pin'></i> 
-                                    <span>Address</span>
-                                    <a href="#">60, 29th Street, San Francisco, CA 94110, United States</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-    
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="single-footer-widget pl-5">
-                            <h3>Company</h3>
-    
-                            <ul class="quick-links">
-                                <li>
-                                    <a href="shop.html">Shop</a>
-                                </li>
-                                <li>
-                                    <a href="about.html">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Store Locations</a>
-                                </li>
-                                <li>
-                                    <a href="checkout.html">Checkout</a>
-                                </li>
-                                <li>
-                                    <a href="track-order.html">Order Tracking</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="single-footer-widget">
-                            <h3>Customer Service</h3>
-    
-                            <ul class="quick-links">
-                                <li>
-                                    <a href="#">Help Center</a>
-                                </li>
-                                <li>
-                                    <a href="#">Store Locations</a>
-                                </li>
-                                <li>
-                                    <a href="privacy-policy.html">Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a href="terms-of-service.html">Terms of Service</a>
-                                </li>
-                                <li>
-                                    <a href="#">Careers</a>
-                                </li>
-                                <li>
-                                    <a href="#">Sitemap</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="single-footer-widget">
-                            <h3>Instagram</h3>
-
-                            <ul class="instagram">
-                                <li>
-                                    <a href="#">
-                                        <img src="assets/img/instagram/image1.jpg" alt="image">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="assets/img/instagram/image2.jpg" alt="image">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="assets/img/instagram/image3.jpg" alt="image">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="assets/img/instagram/image4.jpg" alt="image">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="assets/img/instagram/image5.jpg" alt="image">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="assets/img/instagram/image6.jpg" alt="image">
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <ul class="footer-social">
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <i class='flaticon-facebook'></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <i class='flaticon-twitter'></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <i class='flaticon-pinterest'></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <i class='flaticon-linkedin'></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-bottom-area">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-6">
-                            <p>
-                                <i class="far fa-copyright"></i> 
-                                2020 Xenoz. All Rights Reserved by
-                                <a href="https://envytheme.com/" target="_blank">
-                                    EnvyTheme
-                                </a>
-                            </p>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6">
-                            <ul class="payment-types">
-                                <li>
-                                    <a href="#" target="_blank"><img src="assets/img/payment/visa.png" alt="image"></a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank"><img src="assets/img/payment/mastercard.png" alt="image"></a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank"><img src="assets/img/payment/mastercard2.png" alt="image"></a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank"><img src="assets/img/payment/visa2.png" alt="image"></a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank"><img src="assets/img/payment/expresscard.png" alt="image"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- End Footer Area -->
-
+  
         <!-- Start Go Top Area -->
         <div class="go-top">
             <i class='bx bx-chevron-up'></i>
@@ -1241,29 +1010,4 @@
         </div>
         <!-- End QuickView Modal Area -->
         
-        <!-- Jquery Slim JS -->
-        <script src="assets/js/jquery.min.js"></script>
-        <!-- Popper JS -->
-        <script src="assets/js/popper.min.js"></script>
-        <!-- Bootstrap JS -->
-        <script src="assets/js/bootstrap.min.js"></script>
-        <!-- Meanmenu JS -->
-        <script src="assets/js/meanmenu.min.js"></script>
-        <!-- Owl Carousel JS -->
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <!-- Nice Select JS -->
-        <script src="assets/js/jquery.nice-select.min.js"></script>
-        <!-- Form Ajaxchimp JS -->
-		<script src="assets/js/jquery.ajaxchimp.min.js"></script>
-		<!-- Form Validator JS -->
-		<script src="assets/js/form-validator.min.js"></script>
-		<!-- Contact JS -->
-        <script src="assets/js/contact-form-script.js"></script>
-        <!-- Wow JS -->
-        <script src="assets/js/wow.min.js"></script>
-        <!-- Custom JS -->
-        <script src="assets/js/main.js"></script>
-    </body>
-
-<!-- Mirrored from templates.envytheme.com/xenoz/default/shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Oct 2020 05:44:51 GMT -->
-</html>
+       

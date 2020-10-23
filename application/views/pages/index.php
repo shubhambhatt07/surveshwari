@@ -8,9 +8,9 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-6">
                                     <div class="main-banner-content">
-                                        <div class="circle"></div>
+                                        <!-- <div class="circle"></div> -->
                                         <span>Up To 20% Off</span>
-                                        <h1>Jewelry Arrivals Trending Collection</h1>
+                                        <h1>Spices Arrivals Trending Collection</h1>
 
                                         <div class="banner-btn">
                                             <a href="#" class="default-btn">Shop Now</a>
@@ -20,8 +20,8 @@
 
                                 <div class="col-lg-6">
                                     <div class="banner-image">
-                                        <div class="circle"></div>
-                                        <img src="<?=base_url()?>assets/img/main-banner/women.png" alt="image">
+                                        <!-- <div class="circle"></div> -->
+                                        <img src="<?=base_url()?>assets/images/S1.jpg" alt="image">
                                     </div>
                                 </div>
                             </div>
@@ -31,11 +31,11 @@
 
                 <div class="main-banner-shape">
                     <div class="shape1">
-                        <img src="<?=base_url()?>assets/img/main-banner/shape.png" alt="image">
+                        <img src="<?=base_url()?>assets/images/S2.jpg" alt="image">
                     </div>
-                    <div class="shape2">
-                        <img src="<?=base_url()?>assets/img/main-banner/shape2.png" alt="image">
-                    </div>
+                    <!-- <div class="shape2">
+                        <img src="<?=base_url()?>assets/images/S2.jpg" alt="image">
+                    </div> -->
                 </div>
             </div>
 
@@ -46,20 +46,20 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-6">
                                     <div class="main-banner-content">
-                                        <div class="circle"></div>
+                                        <!-- <div class="circle"></div> -->
                                         <span>Up To 20% Off</span>
-                                        <h1>Jewelry Arrivals Trending Collection</h1>
+                                        <h1>Spices Arrivals Trending Collection</h1>
 
                                         <div class="banner-btn">
-                                            <a href="#" class="default-btn">Shop Nowss</a>
+                                            <a href="#" class="default-btn">Shop Nows</a>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-6">
                                     <div class="banner-image">
-                                        <div class="circle"></div>
-                                        <img src="<?=base_url()?>assets/img/main-banner/women2.png" alt="image">
+                                        <!-- <div class="circle"></div> -->
+                                        <img src="<?=base_url()?>assets/images/S2.jpg" alt="image">
                                     </div>
                                 </div>
                             </div>
@@ -69,10 +69,10 @@
 
                 <div class="main-banner-shape">
                     <div class="shape1">
-                        <img src="<?=base_url()?>assets/img/main-banner/shape.png" alt="image">
+                        <img src="<?=base_url()?>assets/images/S1.jpg" alt="image">
                     </div>
                     <div class="shape2">
-                        <img src="<?=base_url()?>assets/img/main-banner/shape2.png" alt="image">
+                        <img src="<?=base_url()?>assets/images/S2.jpg" alt="image">
                     </div>
                 </div>
             </div>
@@ -84,24 +84,24 @@
             <div class="container">
                 <div class="section-title">
                     <p>Collections</p>
-                    <h2>Top Trending Jewellery</h2>
+                    <h2>Top Trending Spices</h2>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="collections-item">
                             <div class="image">
-                                <a href="shop.html">
+                                <a href="<?=base_url('Shop/index')?>">
                                     <img src="<?=base_url()?>assets/img/collections/collections1.jpg" alt="image">
                                 </a>
 
                                 <div class="shop-btn">
-                                    <a href="shop.html" class="default-btn">Shop Now</a>
+                                    <a href="<?=base_url('Shop/index')?>" class="default-btn">Shop Now</a>
                                 </div>
                             </div>
                             <div class="content">
                                 <h3>
-                                    <a href="shop.html">Neckless</a>
+                                    <a href="<?=base_url('Shop/index')?>">Neckless</a>
                                 </h3>
                                 <span>$55.00</span>
                                 <ul class="star-list">
@@ -128,17 +128,17 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="collections-item">
                             <div class="image">
-                                <a href="shop.html">
+                                <a href="<?=base_url('Shop/index')?>">
                                     <img src="<?=base_url()?>assets/img/collections/collections2.jpg" alt="image">
                                 </a>
 
                                 <div class="shop-btn">
-                                    <a href="shop.html" class="default-btn">Shop Now</a>
+                                    <a href="<?=base_url('Shop/index')?>" class="default-btn">Shop Now</a>
                                 </div>
                             </div>
                             <div class="content">
                                 <h3>
-                                    <a href="shop.html">Diamond Ring</a>
+                                    <a href="<?=base_url('Shop/index')?>">Diamond Ring</a>
                                 </h3>
                                 <span>$125.00</span>
                                 <ul class="star-list">
@@ -165,17 +165,17 @@
                     <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                         <div class="collections-item">
                             <div class="image">
-                                <a href="shop.html">
+                                <a href="<?=base_url('Shop/index')?>">
                                     <img src="<?=base_url()?>assets/img/collections/collections3.jpg" alt="image">
                                 </a>
 
                                 <div class="shop-btn">
-                                    <a href="shop.html" class="default-btn">Shop Now</a>
+                                    <a href="<?=base_url('Shop/index')?>" class="default-btn">Shop Now</a>
                                 </div>
                             </div>
                             <div class="content">
                                 <h3>
-                                    <a href="shop.html">Earrings</a>
+                                    <a href="<?=base_url('Shop/index')?>">Earrings</a>
                                 </h3>
                                 <span>$75.00</span>
                                 <ul class="star-list">
@@ -960,7 +960,7 @@
                             <div class="content">
                                 <h3>
                                     <a href="blog-details.html">
-                                        New Trends Jewellery Changed up Modern Life
+                                        New Trends Spices Changed up Modern Life
                                     </a>
                                 </h3>
                                 <a href="blog-details.html" class="blog-btn">Read More +</a>

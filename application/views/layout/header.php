@@ -42,7 +42,7 @@
         <!-- End Preloader Area -->
 
         <!-- Start Top Header Area -->
-        <div class="top-header">
+      <!--   <div class="top-header">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -85,7 +85,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- End Top Header Area -->
 
         <!-- Start Navbar Area -->
@@ -95,7 +95,7 @@
                     <div class="main-responsive-menu">
                         <div class="logo">
                             <a href="<?=base_url('Home/index')?>">
-                                <img src="<?=base_url()?>assets/img/logo.png" alt="logo">
+                                <img src="<?=base_url()?>assets/images/logo.png" alt="logo">
                             </a>
                         </div>
                     </div>
@@ -106,7 +106,7 @@
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="<?=base_url('Home')?>">
-                            <img src="<?=base_url()?>assets/img/logo.png" alt="logo">
+                            <img src="<?=base_url()?>assets/images/logo.png" alt="logo">
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu">
@@ -142,9 +142,9 @@
                                                         <ul class="megamenu-submenu">
                                                             <li><a href="<?=base_url('Home/About')?>">About Us</a></li>
 
-                                                            <li><a href="<?=base_url('Contact/customer_service')?>">Customer Service</a></li>
+                                                          <!--   <li><a href="<?=base_url('Contact/customer_service')?>">Customer Service</a></li> -->
 
-                                                            <li><a href="<?=base_url('Login')?>">Login</a></li>
+                                                            <li><a href="<?=base_url('Login/userLogin')?>">Login</a></li>
 
                                                             <li><a href="<?=base_url('Login/Register')?>">Register</a></li>
 
@@ -238,9 +238,9 @@
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="shop.html" class="nav-link">Shop Grid</a></li>
+                                        <li class="nav-item"><a href="<?=base_url('Shop/index')?>" class="nav-link">Shop Grid</a></li>
 
-                                        <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+                                        <li class="nav-item"><a href="<?=base_url('Shop/Cart')?>" class="nav-link">Cart</a></li>
 
                                         <li class="nav-item"><a href="checkout.html" class="nav-link">Checkout</a></li>
 
@@ -256,7 +256,7 @@
                                     </ul>
                                 </li>
 
-                                <li class="nav-item">
+                              <!--   <li class="nav-item">
                                     <a href="#" class="nav-link">
                                         Blog 
                                         <i class='bx bx-chevron-down'></i>
@@ -269,7 +269,7 @@
                                         <li class="nav-item"><a href="blog-details.html" class="nav-link">Blog Details</a></li>
                                     </ul>
                                 </li>
-
+ -->
                                 <li class="nav-item">
                                     <a href="<?=base_url('Home/Contact')?>" class="nav-link">Contact</a>
                                 </li>
@@ -302,7 +302,7 @@
 
                                 <div class="option-item">
                                     <div class="cart-btn">
-                                        <a href="cart.html">
+                                        <a href="<?=base_url('Shop/Cart')?>">
                                             <i class='flaticon-shopping-cart'></i>
                                             <span>+2</span>
                                         </a>
@@ -311,7 +311,7 @@
 
                                 <div class="option-item">
                                     <div class="user">
-                                        <a href="login.html">
+                                        <a href="<?=base_url('Login/userLogin')?>">
                                             <i class='flaticon-user'></i>
                                         </a>
                                     </div>
