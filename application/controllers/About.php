@@ -8,11 +8,11 @@
 	 		parent::__construct();
 	 	}
 	 	public function index(){
-	 		$data['categories']=$this->db->order_by('rand()')->get('categories')->result();
+	 		// $data['categories']=$this->db->order_by('rand()')->get('categories')->result();
 	 		// echo 'good to go ';
-	 		$this->load->view('common/header',$data);
+	 		$this->load->view('layout/header');
 	 		$this->load->view('pages/about');
-	 		$this->load->view('common/footer');
+	 		$this->load->view('layout/footer');
 	 	}
 	 	
 	 }

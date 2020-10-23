@@ -1,6 +1,6 @@
 
         <!-- Start Instagram Area -->
-        <section class="instagram-area">
+      <!--   <section class="instagram-area">
             <div class="container-fluid">
                 <div class="instagram-slides owl-carousel owl-theme">
                     <div class="instagram-post">
@@ -40,7 +40,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- End Instagram Area -->
 
         <!-- Start Footer Area -->
@@ -129,7 +129,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-6">
+                   <!--  <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="single-footer-widget">
                             <h3>Instagram</h3>
 
@@ -189,7 +189,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="footer-bottom-area">

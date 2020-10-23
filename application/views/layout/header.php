@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="zxx">
     
-<!-- Mirrored from templates.envytheme.com/xenoz/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Oct 2020 05:44:25 GMT -->
 <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -13,7 +12,7 @@
         <!-- Meanmenu CSS -->
         <link rel="stylesheet" href="<?=base_url()?>assets/css/meanmenu.min.css">
         <!-- Boxicons CSS -->
-        <link rel="stylesheet" href="<?=base_url()?>assets/css/boxicons.min.css">
+        <link rel="stylesheet" href="<?=base_url()?>/assets/css/boxicons.min.css">
         <!-- Flaticon CSS -->
         <link rel="stylesheet" href="<?=base_url()?>assets/css/flaticon.css">
         <!-- Owl Carousel CSS -->
@@ -27,7 +26,7 @@
         <!-- Responsive CSS -->
         <link rel="stylesheet" href="<?=base_url()?>assets/css/responsive.css">
         
-        <title>Xenoz - Multi-Vendor E-Commerce Shop HTML Template</title>
+        <title>Spices</title>
 
         <link rel="icon" type="image/png" href="<?=base_url()?>assets/img/favicon.png">
     </head>
@@ -95,8 +94,8 @@
                 <div class="container">
                     <div class="main-responsive-menu">
                         <div class="logo">
-                            <a href="index-2.html">
-                                <img src="assets/img/logo.png" alt="logo">
+                            <a href="<?=base_url('Home/index')?>">
+                                <img src="<?=base_url()?>assets/img/logo.png" alt="logo">
                             </a>
                         </div>
                     </div>
@@ -107,13 +106,13 @@
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="<?=base_url('Home')?>">
-                            <img src="assets/img/logo.png" alt="logo">
+                            <img src="<?=base_url()?>assets/img/logo.png" alt="logo">
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a href="<?=base_url('Home')?>" class="nav-link active">
+                                    <a href="<?=base_url('Home/index')?>" class="nav-link active">
                                         Home 
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
@@ -141,7 +140,7 @@
                                                         <h6 class="submenu-title">Pages</h6>
 
                                                         <ul class="megamenu-submenu">
-                                                            <li><a href="about.html">About Us</a></li>
+                                                            <li><a href="<?=base_url('Home/About')?>">About Us</a></li>
 
                                                             <li><a href="<?=base_url('Contact/customer_service')?>">Customer Service</a></li>
 
@@ -153,7 +152,7 @@
 
                                                             <li><a href="track-order.html">Tracking Order</a></li>
 
-                                                            <li><a href="<?=base_url('Contact')?>">Contact Us</a></li>
+                                                            <li><a href="<?=base_url('Home/Contact')?>">Contact Us</a></li>
                                                         </ul>
                                                     </div>
 
@@ -163,7 +162,7 @@
                                                         <h6 class="submenu-title">Dashboard</h6>
 
                                                         <ul class="megamenu-submenu">
-                                                            <li><a href="<?=base_url('User')?>">Dashboard</a></li>
+                                                            <li><a href="<?=base_url('Home/index')?>">Dashboard</a></li>
 
                                                             <!-- <li><a href="login.html">My Account</a></li> -->
                                                         </ul>
@@ -272,7 +271,7 @@
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="contact.html" class="nav-link">Contact</a>
+                                    <a href="<?=base_url('Home/Contact')?>" class="nav-link">Contact</a>
                                 </li>
                             </ul>
 

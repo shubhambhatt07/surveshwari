@@ -51,7 +51,7 @@
                                         <h1>Jewelry Arrivals Trending Collection</h1>
 
                                         <div class="banner-btn">
-                                            <a href="#" class="default-btn">Shop Now</a>
+                                            <a href="#" class="default-btn">Shop Nowss</a>
                                         </div>
                                     </div>
                                 </div>
