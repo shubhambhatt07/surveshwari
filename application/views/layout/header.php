@@ -42,50 +42,7 @@
         <!-- End Preloader Area -->
 
         <!-- Start Top Header Area -->
-      <!--   <div class="top-header">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <ul class="header-list">
-                            <li>
-                                <i class="flaticon-bag"></i>
-                                Welcome to our Xenoz product
-                            </li>
-
-                            <li>
-                                <i class="flaticon-delivery-truck"></i>
-                                Free shipping worldwide
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <ul class="header-social">
-                            <li>
-                                <a href="#" target="_blank">
-                                    <i class='flaticon-facebook'></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">
-                                    <i class='flaticon-twitter'></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">
-                                    <i class='flaticon-pinterest'></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">
-                                    <i class='flaticon-linkedin'></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+      
         <!-- End Top Header Area -->
 
         <!-- Start Navbar Area -->
@@ -116,107 +73,10 @@
                                         Home 
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
-                                    <!-- <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="index-2.html" class="nav-link active">Jewelry Home</a></li>
-
-                                        <li class="nav-item"><a href="index-3.html" class="nav-link">Fashion Home</a></li>
-                                        
-                                        <li class="nav-item"><a href="index-4.html" class="nav-link">HandCraft Home</a></li>
-
-                                        <li class="nav-item"><a href="index-5.html" class="nav-link">Electronic Home</a></li>
-                                    </ul> -->
+                                  
                                 </li>
 
-                                <li class="nav-item megamenu">
-                                    <a href="#" class="nav-link">
-                                        Pages 
-                                        <i class='bx bx-chevron-down'></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Pages</h6>
-
-                                                        <ul class="megamenu-submenu">
-                                                            <li><a href="<?=base_url('Home/About')?>">About Us</a></li>
-
-                                                          <!--   <li><a href="<?=base_url('Contact/customer_service')?>">Customer Service</a></li> -->
-
-                                                            <li><a href="<?=base_url('Login/userLogin')?>">Login</a></li>
-
-                                                            <li><a href="<?=base_url('Login/Register')?>">Register</a></li>
-
-                                                           
-
-                                                            <li><a href="track-order.html">Tracking Order</a></li>
-
-                                                            <li><a href="<?=base_url('Home/Contact')?>">Contact Us</a></li>
-                                                        </ul>
-                                                    </div>
-
-                                                    <div class="col">
-                                                       
-
-                                                        <h6 class="submenu-title">Dashboard</h6>
-
-                                                        <ul class="megamenu-submenu">
-                                                            <li><a href="<?=base_url('Home/index')?>">Dashboard</a></li>
-
-                                                            <!-- <li><a href="login.html">My Account</a></li> -->
-                                                        </ul>
-
-                                                        <h6 class="submenu-title">Setting</h6>
-
-                                                        <ul class="megamenu-submenu">
-                                                            <li><a href="<?=base_url('API/privacy_policy')?>">Privacy Policy</a></li>
-
-                                                            <li><a href="<?=base_url('API/terms_of_service')?>">Terms of Service</a></li>
-                                                        </ul>
-                                                    </div>
-
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Categories</h6>
-
-                                                        <ul class="megamenu-submenu">
-                                                            <li><a href="categories-1.html">Masala</a></li>
-
-                                                            <li><a href="categories-2.html">Achar</a></li>
-
-                                                        </ul>
-
-                                                       
-                                                    </div>
-
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop</h6>
-
-                                                        <ul class="megamenu-submenu">
-                                                            <li><a href="cart.html">Cart</a></li>
-
-                                                            <li><a href="checkout.html">Cehckout</a></li>
-
-                                                            <li><a href="compare.html">Compare</a></li>
-
-                                                            <li><a href="login.html">My Account</a></li>
-
-                                                            <li><a href="sizing-guide.html">Sizing Guide</a></li>
-
-                                                            <li><a href="track-order.html">Tracking Order</a></li>
-
-                                                            <li><a href="customer-service.html">Customer Service</a></li>
-
-                                                            <li><a href="coming-soon.html">Coming Soon</a></li>
-
-                                                            <li><a href="contact.html">Contact Us</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
+                              
 
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
@@ -224,11 +84,9 @@
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="categories-1.html" class="nav-link">Categories (3 in Row)</a></li>
-
-                                        <li class="nav-item"><a href="categories-2.html" class="nav-link">Categories Fullwidth</a></li>
-
-                                        <li class="nav-item"><a href="categories-3.html" class="nav-link">Categories FullWidth (4 in Row)</a></li>
+                                       <?php foreach($categories as $cat): ?>
+                                            <li><a href="<?=base_url('Shop/prouductByCategory/').$cat->id?>"><?=$cat->category?></a></li>
+                                        <?php endforeach;?>
                                     </ul>
                                 </li>
 
