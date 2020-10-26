@@ -8,7 +8,7 @@ class Login extends CI_Controller
 
 		parent::__construct();
 		
-		$this->load->model('Login_model');
+		// $this->load->model('Login_model');
 	}
 	
 	public function index()
@@ -40,7 +40,18 @@ class Login extends CI_Controller
 		redirect('Login-Page');
 	}
 
-	
+	public function userLogin()
+	{
+	$this->load->view('layout/header');
+	$this->load->view('pages/login');
+	$this->load->view('layout/footer');
+	}
+	public function Register()
+	{
+	$this->load->view('layout/header');
+	$this->load->view('pages/register');
+	$this->load->view('layout/footer');
+	}
 
 	
 	

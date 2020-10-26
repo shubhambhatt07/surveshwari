@@ -32,6 +32,12 @@
 	 		$this->load->view('pages/shop');
 	 		$this->load->view('layout/footer');
 	 	}
+	 	public function productDetails(){
+	 		
+	 		$this->load->view('layout/header');
+	 		$this->load->view('pages/products-details');
+	 		$this->load->view('layout/footer');
+	 	}
 	 	public function productByCategory($cat_id){
 	 		return $this->db->where('veg_category',$cat_id)->get('crops_')->result_array();
 	 	}
@@ -46,6 +52,12 @@
 	 		// $data['Reviews']=$this->db->join('crops_','crops_.product_id=reviews_.product_id')->get('reviews_')->result();
 	 		$this->load->view('layout/header');
 	 		$this->load->view('pages/shop-detail');
+	 		$this->load->view('layout/footer');
+	 	}
+	 	public function Cart(){
+	 		
+	 		$this->load->view('layout/header');
+	 		$this->load->view('pages/cart');
 	 		$this->load->view('layout/footer');
 	 	}
 	 	

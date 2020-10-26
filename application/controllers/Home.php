@@ -28,6 +28,8 @@
 	 		$this->load->view('pages/contact');
 	 		$this->load->view('layout/footer');
 	 	}
+	 	
+
 	 }
 
 ?>
