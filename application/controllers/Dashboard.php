@@ -4,22 +4,22 @@ class Dashboard extends CI_Controller
 	function __construct()
 	{
 		 parent::__construct();
-	// 	  if(!$this->session->userdata('login')){
-	// 	redirect('Login-Page');
-	// }
-		     //  $this->load->model('Dashboard_model');
+		  if(!$this->session->userdata('login')){
+		redirect('Login-Page');
+	}
+		      $this->load->model('Dashboard_model');
 		
 	}
 	public function viewDashbaord()
 	{
 // 		
-    	 // $data['category_dashboard']=$this->Dashboard_model->category_Detail();
-    	 // $data['product_dashboard']=$this->Dashboard_model->product_Detail();
-      //    $data['feedback_dashboard']=$this->Dashboard_model->feedback_Detail();
-      //    $data['user_dashboard']=$this->Dashboard_model->user_Detail();
+    	 $data['category_dashboard']=$this->Dashboard_model->category_Detail();
+    	 $data['product_dashboard']=$this->Dashboard_model->product_Detail();
+         $data['feedback_dashboard']=$this->Dashboard_model->feedback_Detail();
+         $data['user_dashboard']=$this->Dashboard_model->user_Detail();
         
-		 $this->load->view('layout/header');
-		 $this->load->view('pages/index');
+		 $this->load->view('admin/layout/header',$data);
+		 $this->load->view('admin/pages/index');
 	}
 
 

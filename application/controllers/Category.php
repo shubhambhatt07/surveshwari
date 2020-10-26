@@ -19,6 +19,7 @@ class Category extends CI_Controller
 
 	public function addCategory()
 	{
+
 			if(!empty($_FILES['userfile']['name']))
 	    	{    
 	       		// $ext = pathinfo($_FILES['userfile']['name'], PATHINFO_EXTENSION);
@@ -38,7 +39,7 @@ class Category extends CI_Controller
                 }
                 else
                 {
-                	
+                	echo 'Not Uploaded';
                     $picture = '';
                 } 
             }else{
@@ -52,8 +53,8 @@ class Category extends CI_Controller
 			 		   
              	// print_r($image);
              	// die;
-             	
-             	$results=$this->Category->addCategory($category,$image);
+             	$dataTo=array("category"=>$category,"image_"=>$picture);
+             	$results=$this->Category->addCategory($dataTo);
              	if($results==1)
              	{
              		die(json_encode(array('status'=>'1','data'=>$results)));

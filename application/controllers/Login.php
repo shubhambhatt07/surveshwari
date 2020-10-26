@@ -31,8 +31,8 @@ class Login extends CI_Controller
 		{
 		   
 		   $this->session->set_flashdata('msg','Invalid Email Or Password');
-			// redirect('Login');
-		   redirect('Dashboard/viewDashbaord');;
+			redirect('Login');
+		   // redirect('Dashboard/viewDashbaord');;
 		}
 	}
 	public function logOut(){
