@@ -51,7 +51,7 @@
                         <div class="single-footer-widget">
                             <div class="footer-logo">
                                 <a href="#">
-                                    <img src="<?=base_url()?>assets/img/white-logo.png" alt="image">
+                                    <img src="<?=base_url()?>assets/images/logo.png" alt="image">
                                 </a>
                             </div>
     
@@ -59,17 +59,17 @@
                                 <li>
                                     <i class='flaticon-phone-call'></i> 
                                     <span>Phone</span>
-                                    <a href="tel:882569756">882-569-756</a>
+                                    <a href="tel:882569756">123456789</a>
                                 </li>
                                 <li>
                                     <i class='flaticon-email-1'></i> 
                                     <span>Email</span>
-                                    <a href="mailto:hello@xenoz.com">hello@xenoz.com</a>
+                                    <a href="mailto:info@sarveshwari.com">info@sarveshwari.com</a>
                                 </li>
                                 <li>
                                     <i class='flaticon-pin'></i> 
                                     <span>Address</span>
-                                    <a href="#">60, 29th Street, San Francisco, CA 94110, United States</a>
+                                    <a href="#">Noida </a>
                                 </li>
                             </ul>
                         </div>
@@ -92,8 +92,7 @@
                                 <li>
                                     <a href="checkout.html">Checkout</a>
                                 </li>
-                                <li>
-                                    <a href="track-order.html">Order Tracking</a>
+                                
                                 </li>
                                 <li>
                                     <a href="contact.html">Contact</a>
@@ -119,9 +118,7 @@
                                 <li>
                                     <a href="terms-of-service.html">Terms of Service</a>
                                 </li>
-                                <li>
-                                    <a href="#">Careers</a>
-                                </li>
+                                
                                 <li>
                                     <a href="#">Sitemap</a>
                                 </li>
@@ -129,67 +126,6 @@
                         </div>
                     </div>
 
-                   <!--  <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="single-footer-widget">
-                            <h3>Instagram</h3>
-
-                            <ul class="instagram">
-                                <li>
-                                    <a href="#">
-                                        <img src="<?=base_url()?>assets/img/instagram/image1.jpg" alt="image">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="<?=base_url()?>assets/img/instagram/image2.jpg" alt="image">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="<?=base_url()?>assets/img/instagram/image3.jpg" alt="image">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="<?=base_url()?>assets/img/instagram/image4.jpg" alt="image">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="<?=base_url()?>assets/img/instagram/image5.jpg" alt="image">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="<?=base_url()?>assets/img/instagram/image6.jpg" alt="image">
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <ul class="footer-social">
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <i class='flaticon-facebook'></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <i class='flaticon-twitter'></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <i class='flaticon-pinterest'></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank">
-                                        <i class='flaticon-linkedin'></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div> -->
                 </div>
 
                 <div class="footer-bottom-area">
@@ -197,9 +133,9 @@
                         <div class="col-lg-6 col-md-6">
                             <p>
                                 <i class="far fa-copyright"></i> 
-                                2020 Xenoz. All Rights Reserved by
-                                <a href="https://envytheme.com/" target="_blank">
-                                    EnvyTheme
+                                2020 Sarveshari. All Rights Reserved by
+                                <a href="Sarveshari" target="_blank">
+                                    YOU
                                 </a>
                             </p>
                         </div>
@@ -209,7 +145,7 @@
                                 <li>
                                     <a href="#" target="_blank"><img src="<?=base_url()?>assets/img/payment/visa.png" alt="image"></a>
                                 </li>
-                                <li>
+                               <!--  <li>
                                     <a href="#" target="_blank"><img src="<?=base_url()?>assets/img/payment/mastercard.png" alt="image"></a>
                                 </li>
                                 <li>
@@ -220,7 +156,7 @@
                                 </li>
                                 <li>
                                     <a href="#" target="_blank"><img src="<?=base_url()?>assets/img/payment/expresscard.png" alt="image"></a>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>

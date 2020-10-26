@@ -124,7 +124,7 @@
         <section class="discover-area pb-100">
             <div class="container">
                 <div class="section-title">
-                    <h2>Discover Xenoz Product</h2>
+                    <h2>Discover Product</h2>
                 </div>
 
                 <div class="discover-slider owl-carousel owl-theme">
@@ -244,7 +244,7 @@
                 </div>
             </div>
             <div class="coming-soon-shape">
-                <img src="<?=base_url()?>assets/img/coming-soon-shape.png" alt="image">
+                <img src="<?=base_url()?>assets/images/S2.jpg" alt="image">
             </div>
         </section>
         <!-- End Coming Soon Area -->

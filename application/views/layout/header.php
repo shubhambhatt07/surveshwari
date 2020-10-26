@@ -104,17 +104,7 @@
 
                                         <li class="nav-item"><a href="<?=base_url('Shop/Cart')?>" class="nav-link">Cart</a></li>
 
-                                        <li class="nav-item"><a href="checkout.html" class="nav-link">Checkout</a></li>
-
-                                        <li class="nav-item"><a href="shop-left-sidebar.html" class="nav-link">Shop Left Sidebar</a></li>
-
-                                        <li class="nav-item"><a href="shop-right-sidebar.html" class="nav-link">Shop Right Sidebar</a></li>
-
-                                        <li class="nav-item"><a href="shop-full-width-sidebar.html" class="nav-link">Shop Full Width Sidebar</a></li>
-
-                                        <li class="nav-item"><a href="products-details.html" class="nav-link">Products Details</a></li>
-
-                                        <li class="nav-item"><a href="products-details-two.html" class="nav-link">Products Details Style Two</a></li>
+                                        
                                     </ul>
                                 </li>
 
@@ -145,7 +135,7 @@
                                         </div>
                                         <span>Email Us:</span>
                                         <p>
-                                            <a href="mailto:hello@info.com">info@xenoz.com</a>
+                                            <a href="mailto:info@surveshwari.com">info@surveshwari.com</a>
                                         </p>
                                     </div>
                                 </div>
@@ -157,7 +147,7 @@
                                         </div>
                                         <span>Call Us:</span>
                                         <p>
-                                            <a href="tel:918566246">+918-566-246</a>
+                                            <a href="tel:918566246">+1234567890</a>
                                         </p>
                                     </div>
                                 </div>
@@ -212,7 +202,7 @@
                                         </div>
                                         <span>Email Us:</span>
                                         <p>
-                                            <a href="mailto:hello@info.com">info@xenoz.com</a>
+                                            <a href="mailto:info@surveshwari.com">info@surveshwari.com</a>
                                         </p>
                                     </div>
                                 </div>
@@ -224,7 +214,7 @@
                                         </div>
                                         <span>Call Us:</span>
                                         <p>
-                                            <a href="tel:918566246">+918-566-246</a>
+                                            <a href="tel:12345678790">+12345678790</a>
                                         </p>
                                     </div>
                                 </div>

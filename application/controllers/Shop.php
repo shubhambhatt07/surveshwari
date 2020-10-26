@@ -71,8 +71,9 @@
 	 		$this->load->view('layout/footer');
 	 	}
 	 	public function Cart(){
+
 	 		$data['categories']=$this->getCategories();
-	 		$this->load->view('layout/header');
+	 		$this->load->view('layout/header',$data);
 	 		$this->load->view('pages/cart');
 	 		$this->load->view('layout/footer');
 	 	}

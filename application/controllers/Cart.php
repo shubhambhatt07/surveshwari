@@ -37,7 +37,7 @@
 	 		$this->load->view('common/footer');
 	 	}
 	 	public function orderPlaced(){
-	 		print_r($this->session->deliveryAddress);
+	 		// print_r($this->session->deliveryAddress);
 	 		$data['categories']=$this->db->order_by('rand()')->get('categories')->result();
 	 		// echo 'good to go ';
 	 		$data['webDetail']=$this->db->get('website_name_logo')->row();
@@ -95,13 +95,12 @@
 	 	
 	 	public function addToCart(){
 	 		$productDetails=$this->db->where('product_id',$this->input->post('product_id'))->get('crops_')->row();
-	 		// print_r($productDetails);
-	 		// die;
+	 		
 	 		$data = array(
 			        'id'      => 'Product-Id-'.$productDetails->product_id,
 			        'qty'     => 1,
 			        'price'   => $productDetails->price,
-			        'name'    => $productDetails->name,
+			        'name'    => trim($productDetails->name),
 			        'options' => array(
 			        					'image' => $productDetails->image, 
 			        					'product_id'=>$productDetails->product_id,
@@ -110,8 +109,10 @@
 			        					
 			        				)
 			);
-	 		print_r($data);
-	 		if($this->cart->insert($data)){
+	 		$resd=$this->cart->insert($data);
+	 		// print_r($data);
+	 		// die;
+	 		if($resd){
 	 			// $this->session->set_flashdata('msg',"Product Added Successfully.");
 	 			// redirect(base_url('Home'));
 	 			die(json_encode(array("code"=>1)));
@@ -139,7 +140,7 @@
 			        					
 			        				)
 			);
-	 		 print_r($data);
+	 		 // print_r($data);
 	 		if($this->cart->insert($data)){
 	 			$this->session->set_flashdata('msg',"Product Added Successfully.");
 	 			redirect(base_url('Shop/productDetail/').$this->input->post('product_id'));
@@ -193,16 +194,16 @@
             );
 
 			$this->cart->update($data);
-			redirect(base_url('Cart'));
+			redirect(base_url('Shop/Cart'));
 	 	}
 	 	public function checkOut(){
 	 		$data['categories']=$this->db->order_by('rand()')->get('categories')->result();
 	 		// echo 'good to go ';
 	 		$data['webDetail']=$this->db->get('website_name_logo')->row();
 	 		$data['gallery_']=$this->db->join('categories','categories.id= crops_.veg_category')->order_by('rand()')->get('crops_')->result();
-	 		$this->load->view('common/header',$data);
+	 		$this->load->view('layout/header',$data);
 	 		$this->load->view('pages/checkout');
-	 		$this->load->view('common/footer');
+	 		$this->load->view('layout/footer');
 	 		
 	 	}
 	 	
