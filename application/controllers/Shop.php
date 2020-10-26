@@ -1,6 +1,6 @@
 <?php
 	 defined('BASEPATH') OR exit('No direct script access allowed');
-	 class Shop extends CI_Controller
+	 class Shop extends MY_Controller
 	 {
 	 	
 	 	function __construct()
@@ -33,6 +33,7 @@
 	 		$this->load->view('layout/footer');
 	 	}
 	 	public function prouductByCategory($cat_id){
+	 		$data['categories']=$this->getCategories();
 	 		// $this->db->where('veg_category',$cat_id)->get('crops_')->result_array();
 	 		// $data['categories']=$this->getCategories();
 	 		// // $data['categories']=$this->db->order_by('rand()')->get('categories')->result();
@@ -43,9 +44,13 @@
 	 		$this->load->view('pages/shop');
 	 		$this->load->view('layout/footer');
 	 	}
-	 	public function productDetails(){
-	 		
-	 		$this->load->view('layout/header');
+	 	public function productDetails($id){
+	 		$data['crops_']=$this->db->where('product_id',$id)->order_by('rand()')->get('crops_')->row();
+	 		$data['relatedProducts']=$this->db->where('product_id NOT IN ('.$id.') and veg_category ='.$data['crops_']->veg_category)->order_by('rand()')->get('crops_')->result();
+	 		// print_r($data['relatedProducts']);
+	 		// die;
+	 		$data['categories']=$this->getCategories();
+	 		$this->load->view('layout/header',$data);
 	 		$this->load->view('pages/products-details');
 	 		$this->load->view('layout/footer');
 	 	}
@@ -66,7 +71,7 @@
 	 		$this->load->view('layout/footer');
 	 	}
 	 	public function Cart(){
-	 		
+	 		$data['categories']=$this->getCategories();
 	 		$this->load->view('layout/header');
 	 		$this->load->view('pages/cart');
 	 		$this->load->view('layout/footer');

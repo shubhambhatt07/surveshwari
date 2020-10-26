@@ -1,4 +1,4 @@
-
+<!-- <?php print_r($crops_)?> -->
 
         <!-- Start Page Title -->
         <div class="page-title-area">
@@ -20,28 +20,19 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12">
                         <div class="product-details-image">
-                            <img src="<?=base_url()?>assets/img/gallery/gallery3.jpg" alt="image">
+                            <img src="<?=base_url('assets/products_image/').$crops_->image?>" alt="image">
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-12">
                         <div class="product-details-desc">
-                            <h3>Sweet Tea Dresses</h3>
+                            <h3><?=$crops_->name?></h3>
                             <div class="price">
-                                <span class="new-price">$541.00</span>
-                                <span class="old-price">$652.00</span>
+                                <span class="new-price">&#8377; <?=$crops_->price?></span>
+                                <span class="old-price">&#8377; <?=$crops_->discount?></span>
                             </div>
-                            <div class="product-review">
-                                <div class="rating">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                </div>
-                                <a href="#" class="rating-count">3 reviews</a>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                            
+                            <p><?=$crops_->description?></p>
                             <div class="product-add-to-cart">
                                 <div class="input-counter">
                                     <span class="minus-btn">
@@ -52,10 +43,9 @@
                                         <i class='bx bx-plus'></i>
                                     </span>
                                 </div>
-                                <button type="submit" class="default-btn">
-                                    Add to cart
-                                    <span></span>
-                                </button>
+                                <a href="<?=base_url('Cart/addToCart/')?>" class="default-btn">Add to cart
+                                    <span></span></a>
+                                
                             </div>
                             <div class="buy-checkbox-btn">
                                 <div class="item">
@@ -102,7 +92,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-12 col-md-12">
+                    <!-- <div class="col-lg-12 col-md-12">
                         <div class="tab products-details-tab">
                             <div class="row">
                                 <div class="col-lg-12 col-md-12">
@@ -131,7 +121,7 @@
                                     <div class="tab_content">
                                         <div class="tabs_item">
                                             <div class="products-details-tab-content">
-                                                <p>Design Inspiration lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum.  Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Nulla libero. Vivamus pharetra posuere sapien.</p>
+                                                <p><?=$crops_->description?></p>
                                             </div>
                                         </div>
                                         <div class="tabs_item">
@@ -259,7 +249,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -270,11 +260,12 @@
                         <h2>Related Products</h2>
                     </div>
                     <div class="row">
+                        <?php foreach($relatedProducts as $pro): ?>
                         <div class="col-lg-4 col-md-6">
                             <div class="products-item">
                                 <div class="image">
                                     <a href="#">
-                                        <img src="<?=base_url()?>assets/img/top-trending/image1.jpg" alt="image">
+                                        <img src="<?=base_url('assets/products_image/').$pro->image?>" alt="image">
                                     </a>
     
                                     <ul class="social">
@@ -283,16 +274,7 @@
                                                 <i class="flaticon-shopping-cart"></i>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="flaticon-transfer"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="flaticon-heart"></i>
-                                            </a>
-                                        </li>
+                                       
                                         <li>
                                             <a href="#" data-toggle="modal" data-target="#productsQuickView">
                                                 <i class="flaticon-loupe"></i>
@@ -310,30 +292,14 @@
                                 </div>
     
                                 <div class="content">
-                                    <h3>Make Up</h3>
-                                    <span>$60.00</span>
-                                    <ul class="star-list">
-                                        <li>
-                                            <i class="flaticon-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="flaticon-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="flaticon-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="flaticon-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="flaticon-star"></i>
-                                        </li>
-                                    </ul>
+                                    <h3><?=$pro->name?></h3>
+                                    <span>&#8377; <?=$pro->price?></span>
+                                    
                                 </div>
                             </div>
                         </div>
-    
-                        <div class="col-lg-4 col-md-6">
+                        <?php endforeach;?>
+                       <!--  <div class="col-lg-4 col-md-6">
                             <div class="products-item">
                                 <div class="image">
                                     <a href="#">
@@ -457,7 +423,7 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
