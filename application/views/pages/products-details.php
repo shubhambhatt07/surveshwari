@@ -43,7 +43,7 @@
                                         <i class='bx bx-plus'></i>
                                     </span>
                                 </div>
-                                <a href="<?=base_url('Cart/addToCart/')?>" class="default-btn">Add to cart
+                                <a href="javascript:void(0)" class="default-btn cartt" product="<?=$crops_->product_id?>">Add to cart
                                     <span></span></a>
                                 
                             </div>
@@ -60,7 +60,9 @@
                                     </label>
                                 </div>
                                 <div class="item">
-                                    <a href="#" class="btn btn-light">Buy it now!</a>
+                                    <a href="javascript:void(0)" class="btn btn-light cartt" product="<?=$crops_->product_id?>">Buy it now!
+                                    <span></span></a>
+                                    <!-- <a href="#" class="btn btn-light">Buy it now!</a> -->
                                 </div>
                             </div>
                             <div class="custom-payment-options">
@@ -287,7 +289,7 @@
                                     </div>
     
                                     <div class="shop-btn">
-                                        <a href="#" class="default-btn">Add To Cart</a>
+                                        <a href="javascript:void(0)" class="default-btn cartt" product="<?=$pro->product_id?>">Add To Cart</a>
                                     </div>
                                 </div>
     
@@ -428,6 +430,28 @@
                 </div>
             </div>
         </section>
+        <script type="text/javascript">
+                $(document).ready(function(){
+                    var cartUrl="<?=base_url('Cart/addToCart/')?>";
+                    $('.cartt').on('click',function(){
+                        var product_id=$(this).attr('product');
+                        // alert("Product Id: "+product_id);
+                        $.ajax({
+                            url:cartUrl,
+                            type:"post",
+                            data:{product_id:product_id},
+                            success:function(response){
+                                response=JSON.parse(response);
+                                if(response.code==1){                            
+                                 swal("Good job!", "You clicked the button!", "success");
+                                }else{
+                                    swal("Ooops!", "Failed to Add!", "warning");
+                                }
+                            }
+                        })
+                    });
+                });
+            </script>
         <!-- End Product Details Area -->
 
         <!-- Start Footer Area -->

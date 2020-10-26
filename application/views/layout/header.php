@@ -25,7 +25,11 @@
         <link rel="stylesheet" href="<?=base_url()?>assets/css/style.css">
         <!-- Responsive CSS -->
         <link rel="stylesheet" href="<?=base_url()?>assets/css/responsive.css">
-        
+        <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <title>Spices</title>
 
         <link rel="icon" type="image/png" href="<?=base_url()?>assets/img/favicon.png">

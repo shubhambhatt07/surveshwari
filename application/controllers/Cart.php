@@ -96,6 +96,7 @@
 	 	public function addToCart(){
 	 		$productDetails=$this->db->where('product_id',$this->input->post('product_id'))->get('crops_')->row();
 	 		// print_r($productDetails);
+	 		// die;
 	 		$data = array(
 			        'id'      => 'Product-Id-'.$productDetails->product_id,
 			        'qty'     => 1,
@@ -109,7 +110,7 @@
 			        					
 			        				)
 			);
-	 		// // print_r($data);
+	 		print_r($data);
 	 		if($this->cart->insert($data)){
 	 			// $this->session->set_flashdata('msg',"Product Added Successfully.");
 	 			// redirect(base_url('Home'));
