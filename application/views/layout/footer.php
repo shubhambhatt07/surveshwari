@@ -142,9 +142,9 @@
 
                         <div class="col-lg-6 col-md-6">
                             <ul class="payment-types">
-                                <li>
+                                <!-- <li>
                                     <a href="#" target="_blank"><img src="<?=base_url()?>assets/img/payment/visa.png" alt="image"></a>
-                                </li>
+                                </li> -->
                                <!--  <li>
                                     <a href="#" target="_blank"><img src="<?=base_url()?>assets/img/payment/mastercard.png" alt="image"></a>
                                 </li>

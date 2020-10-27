@@ -9,11 +9,11 @@
                                 <div class="col-lg-6">
                                     <div class="main-banner-content">
                                         <!-- <div class="circle"></div> -->
-                                        <span>Up To 20% Off</span>
-                                        <h1>Spices Arrivals Trending Collection</h1>
+                                        <!-- <span>Up To 20% Off</span> -->
+                                        <!-- <h1>Spices Arrivals Trending Collection</h1> -->
 
                                         <div class="banner-btn">
-                                            <a href="#" class="default-btn">Shop Now</a>
+                                            <!-- <a href="#" class="default-btn">Shop Now</a> -->
                                         </div>
                                     </div>
                                 </div>
@@ -31,7 +31,7 @@
 
                 <div class="main-banner-shape">
                     <div class="shape1">
-                        <img src="<?=base_url()?>assets/images/S2.jpg" alt="image">
+                        <!-- <img src="<?=base_url()?>assets/images/S2.jpg" alt="image"> -->
                     </div>
                     <!-- <div class="shape2">
                         <img src="<?=base_url()?>assets/images/S2.jpg" alt="image">
@@ -130,7 +130,8 @@
                 <div class="discover-slider owl-carousel owl-theme">
                     <div class="discover-item">
                         <div class="icon">
-                            <i class="flaticon-like"></i>
+                            <!-- <i class="flaticon-like"></i> -->
+                         <img height="202" width="202"src="<?=base_url()?>assets/images/satisfaction.png" alt="image">
                         </div>
                         <h3>100% Satisfaction</h3>
                         <p>There are many variations</p>
@@ -138,7 +139,8 @@
 
                     <div class="discover-item">
                         <div class="icon">
-                            <i class="flaticon-shopping-bag"></i>
+                            <!-- <i class="flaticon-shopping-bag"></i> -->
+                             <img style="height:202 !important;width:202 !important"src="<?=base_url()?>assets/images/shopscountries.png" alt="image">
                         </div>
                         <h3>Shop in  60 Countries</h3>
                         <p>There are many variations</p>
@@ -146,7 +148,8 @@
 
                     <div class="discover-item">
                         <div class="icon">
-                            <i class="flaticon-delivery-truck"></i>
+                            <!-- <i class="flaticon-delivery-truck"></i> -->
+                             <img height="202" width="202"src="<?=base_url()?>assets/images/Shipment.png" alt="image">
                         </div>
                         <h3>Fast Shipment</h3>
                         <p>There are many variations</p>
@@ -154,7 +157,8 @@
 
                     <div class="discover-item">
                         <div class="icon">
-                            <i class="flaticon-credit-card"></i>
+                            <!-- <i class="flaticon-credit-card"></i> -->
+                             <img height="202" width="202"src="<?=base_url()?>assets/images/MoneyBack.png" alt="image">
                         </div>
                         <h3>Money Back</h3>
                         <p>There are many variations</p>
@@ -162,7 +166,8 @@
 
                     <div class="discover-item">
                         <div class="icon">
-                            <i class="flaticon-customer-service"></i>
+                            <!-- <i class="flaticon-customer-service"></i> -->
+                             <img height="202" width="202"src="<?=base_url()?>assets/images/Support.png" alt="image">
                         </div>
                         <h3>24/7 Customer Service</h3>
                         <p>There are many variations</p>
