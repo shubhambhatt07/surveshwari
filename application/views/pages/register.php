@@ -1,4 +1,12 @@
+<style type="text/css">
+    .icon img{
+        height: 50px !important;
+        width: 50px !important;
+    }
+    .icon{
 
+    }
+</style>
 
         <!-- Start Page Title -->
         <div class="page-title-area">
@@ -22,29 +30,52 @@
                         <h3>Register</h3>
                     </div>
                         
-                    <form>
+                    <form id="Register">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="First Name">
+                                    <input type="text" class="form-control" required name="fname" placeholder="First Name">
                                 </div>
                             </div>
 
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Last Name">
+                                    <input type="text" class="form-control" required name="lname" placeholder="Last Name">
+                                </div>
+                            </div>
+                             <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" name="phone" required placeholder="phone">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email"required placeholder="Email">
                                 </div>
                             </div>
 
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email">
+                                    <input type="password" class="form-control" name="pass" required placeholder="Password">
                                 </div>
                             </div>
-
-                            <div class="col-lg-6">
+                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Password">
+                                    <input type="text" class="form-control" name="address" required placeholder="Address">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <strong>Gender</strong>
+                                <div class="form-group" style="display: flex;">
+                                   <input type="radio" id="male" name="gender" value="male">
+  <label for="male" style="margin-left: 8px;
+    margin-top: -5px ;">Male</label>
+  <input type="radio" style="margin-left: 8px; " id="female" name="gender" value="female">
+  <label for="female" style="margin-left: 8px;
+    margin-top: -5px ;">Female</label>
+  <input type="radio"  style="margin-left: 8px; " id="other" name="gender" value="other">
+  <label for="other" style="margin-left: 8px;
+    margin-top: -5px ;">Other</label>
                                 </div>
                             </div>
 
@@ -64,48 +95,53 @@
         <!-- End Register Area -->
 
         <!-- Start Discover Area -->
-        <section class="discover-area pb-100">
+         <section class="discover-area pb-100" style="position: relative; top: 0px; padding-bottom: 121px !important;">
             <div class="container">
                 <div class="section-title">
-                    <h2>Discover Xenoz Product</h2>
+                    <h2>Discover Product</h2>
                 </div>
 
                 <div class="discover-slider owl-carousel owl-theme">
                     <div class="discover-item">
-                        <div class="icon">
-                            <i class="flaticon-like"></i>
+                        <div class="icon" align="center">
+                            <!-- <i class="flaticon-like"></i> -->
+                         <img height="202" width="202"src="<?=base_url()?>assets/images/satisfaction.png" alt="image">
                         </div>
                         <h3>100% Satisfaction</h3>
                         <p>There are many variations</p>
                     </div>
 
                     <div class="discover-item">
-                        <div class="icon">
-                            <i class="flaticon-shopping-bag"></i>
+                        <div class="icon" align="center">
+                            <!-- <i class="flaticon-shopping-bag"></i> -->
+                             <img style="height:202 !important;width:202 !important"src="<?=base_url()?>assets/images/shopscountries.png" alt="image">
                         </div>
                         <h3>Shop in  60 Countries</h3>
                         <p>There are many variations</p>
                     </div>
 
                     <div class="discover-item">
-                        <div class="icon">
-                            <i class="flaticon-delivery-truck"></i>
+                        <div class="icon" align="center">
+                            <!-- <i class="flaticon-delivery-truck"></i> -->
+                             <img height="202" width="202"src="<?=base_url()?>assets/images/Shipment.png" alt="image">
                         </div>
                         <h3>Fast Shipment</h3>
                         <p>There are many variations</p>
                     </div>
 
                     <div class="discover-item">
-                        <div class="icon">
-                            <i class="flaticon-credit-card"></i>
+                        <div class="icon" align="center">
+                            <!-- <i class="flaticon-credit-card"></i> -->
+                             <img height="202" width="202"src="<?=base_url()?>assets/images/MoneyBack.png" alt="image">
                         </div>
                         <h3>Money Back</h3>
                         <p>There are many variations</p>
                     </div>
 
                     <div class="discover-item">
-                        <div class="icon">
-                            <i class="flaticon-customer-service"></i>
+                        <div class="icon" align="center">
+                            <!-- <i class="flaticon-customer-service"></i> -->
+                             <img height="202" width="202"src="<?=base_url()?>assets/images/Support.png" alt="image">
                         </div>
                         <h3>24/7 Customer Service</h3>
                         <p>There are many variations</p>
@@ -113,170 +149,36 @@
                 </div>
             </div>
         </section>
-        <!-- End Discover Area -->
-
-        <!-- Start Instagram Area -->
-        <section class="instagram-area">
-            <div class="container-fluid">
-                <div class="instagram-slides owl-carousel owl-theme">
-                    <div class="instagram-post">
-                        <img src="<?=base_url()?>assets/img/instagram/image1.jpg" alt="image">
-                        <i class='bx bxl-instagram'></i>
-                        <a href="#" target="_blank" class="link-btn"></a>
-                    </div>
-
-                    <div class="instagram-post">
-                        <img src="<?=base_url()?>assets/img/instagram/image2.jpg" alt="image">
-                        <i class='bx bxl-instagram'></i>
-                        <a href="#" target="_blank" class="link-btn"></a>
-                    </div>
-
-                    <div class="instagram-post">
-                        <img src="<?=base_url()?>assets/img/instagram/image3.jpg" alt="image">
-                        <i class='bx bxl-instagram'></i>
-                        <a href="#" target="_blank" class="link-btn"></a>
-                    </div>
-
-                    <div class="instagram-post">
-                        <img src="<?=base_url()?>assets/img/instagram/image4.jpg" alt="image">
-                        <i class='bx bxl-instagram'></i>
-                        <a href="#" target="_blank" class="link-btn"></a>
-                    </div>
-
-                    <div class="instagram-post">
-                        <img src="<?=base_url()?>assets/img/instagram/image5.jpg" alt="image">
-                        <i class='bx bxl-instagram'></i>
-                        <a href="#" target="_blank" class="link-btn"></a>
-                    </div>
-
-                    <div class="instagram-post">
-                        <img src="<?=base_url()?>assets/img/instagram/image6.jpg" alt="image">
-                        <i class='bx bxl-instagram'></i>
-                        <a href="#" target="_blank" class="link-btn"></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Instagram Area -->
-
-
-        <!-- End Footer Area -->
-
-        <!-- Start Go Top Area -->
-        <div class="go-top">
-            <i class='bx bx-chevron-up'></i>
-        </div>
-        <!-- End Go Top Area -->
-
-        <!-- Start QuickView Modal Area -->
-        <div class="modal fade productsQuickView" id="productsQuickView" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class='bx bx-x'></i></span>
-                    </button>
-
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="products-image">
-                                <img src="<?=base_url()?>assets/img/quick-view-img.jpg" alt="image">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6">
-                            <div class="products-content">
-                                <h3><a href="#">Our Special Xenoz Products</a></h3>
-
-                                <div class="price">
-                                    <span class="old-price">$210.00</span>
-                                    <span class="new-price">$200.00</span>
-                                </div>
-
-                                <div class="products-review">
-                                    <div class="rating">
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                    </div>
-                                    <a href="#" class="rating-count">3 reviews</a>
-                                </div>
-
-                                <ul class="products-info">
-                                    <li><span>Vendor:</span> <a href="#">Lereve</a></li>
-                                    <li><span>Availability:</span> <a href="#">In stock (7 items)</a></li>
-                                    <li><span>Products Type:</span> <a href="#">T-Shirt</a></li>
-                                </ul>
-
-                                <div class="products-color-switch">
-                                    <h4>Color:</h4>
-
-                                    <ul>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Black" class="color-black"></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="White" class="color-white"></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Green" class="color-green"></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Yellow Green" class="color-yellowgreen"></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Teal" class="color-teal"></a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="products-size-wrapper">
-                                    <h4>Size:</h4>
-
-                                    <ul>
-                                        <li><a href="#">XS</a></li>
-                                        <li class="active"><a href="#">S</a></li>
-                                        <li><a href="#">M</a></li>
-                                        <li><a href="#">XL</a></li>
-                                        <li><a href="#">XXL</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="products-add-to-cart">
-                                    <div class="input-counter">
-                                        <span class="minus-btn"><i class='bx bx-minus'></i></span>
-                                        <input type="text" value="1">
-                                        <span class="plus-btn"><i class='bx bx-plus'></i></span>
-                                    </div>
-
-                                    <button type="submit" class="default-btn">Add to Cart</button>
-                                </div>
-
-                                <ul class="share">
-                                    <li>
-                                        <span>Share:</span>
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="#" target="_blank">
-                                            <i class="flaticon-twitter"></i>
-                                        </a>
-                                    </li>
-                
-                                    <li>
-                                        <a href="#" target="_blank">
-                                            <i class="flaticon-instagram"></i>
-                                        </a>
-                                    </li>
-                
-                                    <li>
-                                        <a href="#" target="_blank">
-                                            <i class="flaticon-facebook"></i>
-                                        </a>
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="#" target="_blank">
-                                            <i class="flaticon-linkedin"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End QuickView Modal Area -->
+        <script type="text/javascript">
+    $(document).ready(function(){
+        
+      $('#Register').submit(function(e){
+        // alert('dd');
+        var formData=new FormData($(this)[0]);
+        e.preventDefault();
+        $.ajax({
+          url:"<?=base_url('Login/userRegistration')?>",
+          type:"post",
+          cache:false,
+          contentType:false,
+          processData:false,
+          data:formData,
+          success:function(response){
+            console.log(response);
+            response=JSON.parse(response);
+            if(response.status==1){
+              swal("Great..","Registered Successfully.","success");
+            }else if(response.status==2){
+              swal("Ooops..","Account with same email id Already Exists","warning");
+            }else{
+              swal("Ooops..","Server Not Found","error");
+            }
+            setInterval(function(){
+              location.reload();
+            },2000)
+          }
+        });
+      }); 
+    });
+  </script>
       

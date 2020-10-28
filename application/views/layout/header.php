@@ -89,12 +89,14 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                        <?php foreach($categories as $cat): ?>
-                                            <li><a href="<?=base_url('Shop/prouductByCategory/').$cat->id?>"><?=$cat->category?></a></li>
+                                            <li>
+                                                <a href="<?=base_url('Shop/prouductByCategory/').$cat->id?>"><?=$cat->category?></a>
+                                            </li>
                                         <?php endforeach;?>
                                     </ul>
                                 </li>
 
-                                <li class="nav-item">
+                             <!--    <li class="nav-item">
                                     <a href="#" class="nav-link">
                                         Shop 
                                         <i class='bx bx-chevron-down'></i>
@@ -106,7 +108,7 @@
 
                                         
                                     </ul>
-                                </li>
+                                </li> -->
 
                               <!--   <li class="nav-item">
                                     <a href="#" class="nav-link">
@@ -125,6 +127,9 @@
                                 <li class="nav-item">
                                     <a href="<?=base_url('Home/Contact')?>" class="nav-link">Contact</a>
                                 </li>
+                                <!--  <li class="nav-item">
+                                    <a href="<?=base_url('Home/About')?>" class="nav-link">About</a>
+                                </li> -->
                             </ul>
 
                             <div class="others-option d-flex align-items-center">
@@ -163,19 +168,30 @@
 
                                 <div class="option-item">
                                     <div class="user">
-                                        <a href="<?=base_url('Login/userLogin')?>">
+                                    <?php 
+                                    if($this->session->userdata('login'))
+                                    {?>
+                                   <a href="<?=base_url('Login/logOut')?>">Logout
+                                           
+                                            </a>
+
+                                  <?php  }
+                                    else{
+                                        ?> <a href="<?=base_url('Login/userLogin')?>">
                                             <i class='flaticon-user'></i>
-                                        </a>
+                                        </a><?php
+                                    }?>
+                                       
                                     </div>
                                 </div>
 
-                                <div class="option-item">
+                                <!-- <div class="option-item">
                                     <div class="heart">
                                         <a href="#">
                                             <i class='flaticon-heart'></i>
                                         </a>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </nav>

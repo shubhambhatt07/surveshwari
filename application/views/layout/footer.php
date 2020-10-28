@@ -44,7 +44,7 @@
         <!-- End Instagram Area -->
 
         <!-- Start Footer Area -->
-        <section class="footer-area pt-100">
+        <section class="footer-area pt-100" style="position: relative;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6">
@@ -81,21 +81,21 @@
     
                             <ul class="quick-links">
                                 <li>
-                                    <a href="shop.html">Shop</a>
+                                    <a href="<?=base_url('Home/index')?>">Home</a>
                                 </li>
-                                <li>
-                                    <a href="about.html">About Us</a>
+                               <!--  <li>
+                                    <a href="<?=base_url('Home/index')?>">About Us</a>
                                 </li>
                                 <li>
                                     <a href="#">Store Locations</a>
                                 </li>
                                 <li>
                                     <a href="checkout.html">Checkout</a>
-                                </li>
+                                </li> -->
                                 
                                 </li>
                                 <li>
-                                    <a href="contact.html">Contact</a>
+                                   <a href="<?=base_url('Home/Contact')?>">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -113,10 +113,12 @@
                                     <a href="#">Store Locations</a>
                                 </li>
                                 <li>
-                                    <a href="privacy-policy.html">Privacy Policy</a>
+                                    <!-- <a href="privacy-policy.html">Privacy Policy</a> -->
+                                     <a href="#">Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <a href="terms-of-service.html">Terms of Service</a>
+                                    <!-- <a href="terms-of-service.html">Terms of Service</a> -->
+                                     <a href="#">Terms of Service</a>
                                 </li>
                                 
                                 <li>

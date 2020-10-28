@@ -1,3 +1,12 @@
+<style type="text/css">
+    .icon img{
+        height: 50px !important;
+        width: 50px !important;
+    }
+    .icon{
+
+    }
+</style>
 
         <!-- Start Main Banner Area -->
         <div class="home-slides owl-carousel owl-theme">
@@ -5,7 +14,7 @@
                 <div class="d-table">
                     <div class="d-table-cell">
                         <div class="container">
-                            <div class="row align-items-center">
+                            <div class="row align-items-center" style="height: 745px !important">
                                 <div class="col-lg-6">
                                     <div class="main-banner-content">
                                         <!-- <div class="circle"></div> -->
@@ -21,7 +30,7 @@
                                 <div class="col-lg-6">
                                     <div class="banner-image">
                                         <!-- <div class="circle"></div> -->
-                                        <img src="<?=base_url()?>assets/images/S1.jpg" alt="image">
+                                         <!-- <img src="<?=base_url()?>assets/images/S1.jpg" alt="image">  -->
                                     </div>
                                 </div>
                             </div>
@@ -31,49 +40,47 @@
 
                 <div class="main-banner-shape">
                     <div class="shape1">
-                        <!-- <img src="<?=base_url()?>assets/images/S2.jpg" alt="image"> -->
-                    </div>
-                    <!-- <div class="shape2">
                         <img src="<?=base_url()?>assets/images/S2.jpg" alt="image">
-                    </div> -->
+                    </div>
+                    
                 </div>
             </div>
 
-            <div class="main-banner-item">
+            <!-- <div class="main-banner-item">
                 <div class="d-table">
                     <div class="d-table-cell">
                         <div class="container">
                             <div class="row align-items-center">
                                 <div class="col-lg-6">
                                     <div class="main-banner-content">
-                                        <!-- <div class="circle"></div> -->
-                                        <span>Up To 20% Off</span>
-                                        <h1>Spices Arrivals Trending Collection</h1>
+                                         <div class="circle"></div> -->
+                                        <!-- <span>Up To 20% Off</span> -->
+                                        <!-- <h1>Spices Arrivals Trending Collection</h1> -->
 
-                                        <div class="banner-btn">
-                                            <a href="#" class="default-btn">Shop Nows</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                        <!-- <div class="banner-btn"> -->
+                                            <!-- <a href="#" class="default-btn">Shop Nows</a> -->
+                                        <!-- </div> -->
+                                    <!-- </div> -->
+                                <!-- </div> -->
 
-                                <div class="col-lg-6">
+                               <!--  <div class="col-lg-6">
                                     <div class="banner-image">
-                                        <!-- <div class="circle"></div> -->
-                                        <img src="<?=base_url()?>assets/images/S2.jpg" alt="image">
-                                    </div>
-                                </div>
+                                        <div class="circle"></div>
+                                         <img src="<?=base_url()?>assets/images/S1.jpg" alt="image"> -->
+                                    <!-- </div> -->
+                               <!--  </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>  -->
 
                 <div class="main-banner-shape">
                     <div class="shape1">
                         <img src="<?=base_url()?>assets/images/S1.jpg" alt="image">
                     </div>
-                    <div class="shape2">
+                    <!-- <div class="shape2">
                         <img src="<?=base_url()?>assets/images/S2.jpg" alt="image">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -121,7 +128,7 @@
         <!-- End Overview Area -->
 
         <!-- Start Discover Area -->
-        <section class="discover-area pb-100">
+        <section class="discover-area pb-100" style="position: relative; top: 0px; padding-bottom: 121px !important;">
             <div class="container">
                 <div class="section-title">
                     <h2>Discover Product</h2>
@@ -129,7 +136,7 @@
 
                 <div class="discover-slider owl-carousel owl-theme">
                     <div class="discover-item">
-                        <div class="icon">
+                        <div class="icon" align="center">
                             <!-- <i class="flaticon-like"></i> -->
                          <img height="202" width="202"src="<?=base_url()?>assets/images/satisfaction.png" alt="image">
                         </div>
@@ -138,7 +145,7 @@
                     </div>
 
                     <div class="discover-item">
-                        <div class="icon">
+                        <div class="icon" align="center">
                             <!-- <i class="flaticon-shopping-bag"></i> -->
                              <img style="height:202 !important;width:202 !important"src="<?=base_url()?>assets/images/shopscountries.png" alt="image">
                         </div>
@@ -147,7 +154,7 @@
                     </div>
 
                     <div class="discover-item">
-                        <div class="icon">
+                        <div class="icon" align="center">
                             <!-- <i class="flaticon-delivery-truck"></i> -->
                              <img height="202" width="202"src="<?=base_url()?>assets/images/Shipment.png" alt="image">
                         </div>
@@ -156,7 +163,7 @@
                     </div>
 
                     <div class="discover-item">
-                        <div class="icon">
+                        <div class="icon" align="center">
                             <!-- <i class="flaticon-credit-card"></i> -->
                              <img height="202" width="202"src="<?=base_url()?>assets/images/MoneyBack.png" alt="image">
                         </div>
@@ -165,7 +172,7 @@
                     </div>
 
                     <div class="discover-item">
-                        <div class="icon">
+                        <div class="icon" align="center">
                             <!-- <i class="flaticon-customer-service"></i> -->
                              <img height="202" width="202"src="<?=base_url()?>assets/images/Support.png" alt="image">
                         </div>
@@ -178,7 +185,7 @@
         <!-- End Discover Area -->
 
         <!-- Start Special Products Area -->
-        <section class="special-products-area pb-70">
+        <section class="special-products-area pb-70" style="position: relative; top: 0px">
             <div class="container">
                 <div class="section-title">
                     <p>Special</p>
@@ -232,23 +239,9 @@
         <!-- End Special Products Area -->
 
         <!-- Start Coming Soon Area -->
-        <section class="coming-soon-area ptb-100">
-            <div class="container">
-                <div class="coming-soon-title">
-                    <span>Limited Offer!</span>
-                    <h3>Weekly Sale On 60% Off</h3>
-                </div>
-
-                <div class="coming-soon-content">
-                    <div id="timer">
-                        <div id="days"></div>
-                        <div id="hours"></div>
-                        <div id="minutes"></div>
-                        <div id="seconds"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="coming-soon-shape">
+        <section class="" style="position: relative; top: 0px" >
+          
+            <div class="coming-soon-shape" style="">
                 <img src="<?=base_url()?>assets/images/S2.jpg" alt="image">
             </div>
         </section>
