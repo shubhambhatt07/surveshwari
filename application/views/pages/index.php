@@ -237,12 +237,33 @@
             </div>
         </section>
         <!-- End Special Products Area -->
-
-        <!-- Start Coming Soon Area -->
-        <section class="" style="position: relative; top: 0px" >
-          
-            <div class="coming-soon-shape" style="">
-                <img src="<?=base_url()?>assets/images/S2.jpg" alt="image">
+        <section class=""  >
+            <div  class="container" style="width:70%">
+                <div class="section-title">
+                    <p>Special</p>
+                    <h2>Our Special Pickles</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="<?=base_url()?>assets/images/Aam-ka-achar.jpg" alt="image">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="<?=base_url()?>assets/images/Masale.jpg" alt="image">
+                    </div>
+                </div>
             </div>
+            
+                
+          
+        </section>
+        <!-- Start Coming Soon Area -->
+        <section class="mt-1"  >
+            <div class="section-title">
+                    <!-- <p>Special</p> -->
+                    <h2>Speciality</h2>
+                </div>
+            
+                <img src="<?=base_url()?>assets/images/Bottom-Image.jpg" alt="image">
+          
         </section>
         <!-- End Coming Soon Area -->

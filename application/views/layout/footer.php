@@ -44,7 +44,7 @@
         <!-- End Instagram Area -->
 
         <!-- Start Footer Area -->
-        <section class="footer-area pt-100" style="position: relative;">
+        <section class="footer-area pt-100 " >
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6">
