@@ -1,4 +1,5 @@
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script src="//geodata.solutions/includes/countrystatecity.js"></script>
 
         <!-- Start Page Title -->
         <div class="page-title-area">
@@ -13,6 +14,32 @@
             </div>
         </div>
         <!-- End Page Title -->
+
+
+
+
+            <div class="col-md-3">
+                            <label class="font-weight-bold">Country</label>
+                            <select name="country" class="countries form-control" id="countryId">
+                                <option value="">Select Country</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="font-weight-bold">State</label>
+                            <select name="state" class="states form-control" id="stateId">
+                                <option value="">Select State</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="font-weight-bold">City</label>
+                            <select name="city" class="cities form-control" id="cityId">
+                                <option value="">Select City</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="font-weight-bold">Zip Code</label>
+                            <input type="text" name="zip_code" class="form-control" placeholder="110017">
+                        </div>
 
         <!-- Start Checkout Area -->
 		<section class="checkout-area ptb-100">
@@ -184,7 +211,7 @@
                                             <label for="paypal">PayPal</label>
                                         </p> -->
                                         <p>
-                                            <input type="radio" id="paypal" name="radio-group">
+                                            <input type="radio" id="paypal" name="payumoney">
                                             <label for="paypal">Payumoney</label>
                                         </p>
                                         <p>

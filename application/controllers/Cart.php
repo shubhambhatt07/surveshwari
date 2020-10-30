@@ -36,8 +36,9 @@
 	 		$this->load->view('pages/orderConfirmed');
 	 		$this->load->view('common/footer');
 	 	}
-	 	
+
 	 	public function orderPlaced(){
+	 		die(json_encode($_POST));
 	 		// print_r($this->session->deliveryAddress);
 	 		$data['categories']=$this->db->order_by('rand()')->get('categories')->result();
 	 		// echo 'good to go ';
