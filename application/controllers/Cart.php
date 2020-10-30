@@ -1,6 +1,6 @@
 <?php
 	 defined('BASEPATH') OR exit('No direct script access allowed');
-	 class Cart extends CI_Controller
+	 class Cart extends MY_Controller
 	 {
 	 	
 	 	function __construct()
@@ -36,6 +36,7 @@
 	 		$this->load->view('pages/orderConfirmed');
 	 		$this->load->view('common/footer');
 	 	}
+	 	
 	 	public function orderPlaced(){
 	 		// print_r($this->session->deliveryAddress);
 	 		$data['categories']=$this->db->order_by('rand()')->get('categories')->result();
@@ -197,10 +198,11 @@
 			redirect(base_url('Shop/Cart'));
 	 	}
 	 	public function checkOut(){
-	 		$data['categories']=$this->db->order_by('rand()')->get('categories')->result();
-	 		// echo 'good to go ';
-	 		$data['webDetail']=$this->db->get('website_name_logo')->row();
-	 		$data['gallery_']=$this->db->join('categories','categories.id= crops_.veg_category')->order_by('rand()')->get('crops_')->result();
+	 		$data['categories']=$this->getCategories();
+	 		// $data['categories']=$this->db->order_by('rand()')->get('categories')->result();
+	 		// // echo 'good to go ';
+	 		// $data['webDetail']=$this->db->get('website_name_logo')->row();
+	 		// $data['gallery_']=$this->db->join('categories','categories.id= crops_.veg_category')->order_by('rand()')->get('crops_')->result();
 	 		$this->load->view('layout/header',$data);
 	 		$this->load->view('pages/checkout');
 	 		$this->load->view('layout/footer');

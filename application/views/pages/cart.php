@@ -219,7 +219,7 @@
         <!-- End Go Top Area -->
 
         <!-- Start QuickView Modal Area -->
-        <div class="modal fade productsQuickView" id="productsQuickView" tabindex="-1" role="dialog" aria-hidden="true">
+       <!--  <div class="modal fade productsQuickView" id="productsQuickView" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -327,6 +327,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- End QuickView Modal Area -->
   
