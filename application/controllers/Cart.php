@@ -38,24 +38,32 @@
 	 	}
 
 	 	public function orderPlaced(){
-	 		die(json_encode($_POST));
+	 		// die(json_encode($_POST));
+	 		
 	 		// {"country":"","first_name":"sdf","last_name":"sdf","full_address":"sd","state":"","city":"","zip_code":"sdf","email":"sfs@sdsnom","phone":"sdf","payumoney":"on"}
+	 		$fullName=$this->input->post('first_name').' '.$this->input->post('last_name');
 	 		$address=array(
-	 							""=>$this->input->post('country'),
-	 							""=>,
-	 							""=>,
-	 							""=>,
-	 							""=>,
+	 							"fullName"=>$fullName,
+	 							"email"=>$this->input->post('email'),
+	 							"country"=>$this->input->post('country'),
+	 							"state"=>$this->input->post('state'),
+	 							"city"=>$this->input->post('city'),
+	 							"zip_code"=>$this->input->post('zip_code'),
+	 							
 	 						);
 
-
+	 		$deliveryAddress=serialize($address);
 	 		// print_r($this->session->deliveryAddress);
-
-	 		if($this->input->post('payumoney')=='on'){
+	 		$user_id=11;	
+	 		if($this->input->post('payumoney')){
 	 			//Implement Payment Gateway
+	 			$paymentMode=2;
 	 		}else{
 	 			//Implement Cash On Delivery
+	 			$paymentMode=1;
 	 		}
+	 		// echo $paymentMode;
+	 		// die(json_encode($_POST));
 	 		$data['categories']=$this->db->order_by('rand()')->get('categories')->result();
 	 		// echo 'good to go ';
 	 		$data['webDetail']=$this->db->get('website_name_logo')->row();
@@ -65,7 +73,7 @@
 	 		$productIdArr=array();
 	 		$priceArr=array();
 	 		$quantArr=array();
-	 		$paymentMode="Cash";
+	 		
 	 		$order=array();
 	 		$total=0;
 	 		$tax=0.18;
@@ -82,33 +90,33 @@
 	 		// print_r($order);
 	 		$orderDetails=array(
 	 							"cart_details"=>serialize($order),
-	 							"user_id"=>$session[0]->id,
-	 							"payment_mode"=>1,
+	 							"user_id"=>$user_id,
+	 							"payment_mode"=>$paymentMode,
 	 							"amount_status"=>2,
-	 							"deli_add"=>$this->session->deliveryAddress
+	 							"deli_add"=>$deliveryAddress
 	 							);
 	 		// print_r($orderDetails);
 	 		// die;
-	 		if($this->session->userdata('deliveryAddress')){
+	 		// if($this->session->userdata('deliveryAddress')){
 	 			if(count($this->db->where($orderDetails)->get('orders_')->result())==0){
 		 			if($this->db->insert('orders_',$orderDetails)){
 		 				$this->session->set_flashdata('msg','Order Placed.');
 		 				$this->cart->destroy();
-		 				$this->session->unset_userdata('deliveryAddress');
+		 				// $this->session->unset_userdata('deliveryAddress');
 		 			}else{
 		 				$this->session->set_flashdata('msg','Failed To Placed Order.');
 		 			}
 		 		}else{
 		 			$this->session->set_flashdata('msg','Order Already Exists.');
 		 		}	
-	 		}else{
-	 			redirect('Home');
-	 		}
-	 		
+	 		// }else{
+	 		// 	redirect('Home');
+	 		// }
+	 		echo $this->session->set_flashdata('msg');
 	 		// print_r($orderDetails);
-	 		$this->load->view('common/header',$data);
-	 		$this->load->view('pages/orderPlaced');
-	 		$this->load->view('common/footer');
+	 		// $this->load->view('layout/header',$data);
+	 		// $this->load->view('pages/orderPlaced');
+	 		// $this->load->view('common/footer');
 	 	}
 	 	
 	 	public function addToCart(){
