@@ -39,7 +39,23 @@
 
 	 	public function orderPlaced(){
 	 		die(json_encode($_POST));
+	 		// {"country":"","first_name":"sdf","last_name":"sdf","full_address":"sd","state":"","city":"","zip_code":"sdf","email":"sfs@sdsnom","phone":"sdf","payumoney":"on"}
+	 		$address=array(
+	 							""=>$this->input->post('country'),
+	 							""=>,
+	 							""=>,
+	 							""=>,
+	 							""=>,
+	 						);
+
+
 	 		// print_r($this->session->deliveryAddress);
+
+	 		if($this->input->post('payumoney')=='on'){
+	 			//Implement Payment Gateway
+	 		}else{
+	 			//Implement Cash On Delivery
+	 		}
 	 		$data['categories']=$this->db->order_by('rand()')->get('categories')->result();
 	 		// echo 'good to go ';
 	 		$data['webDetail']=$this->db->get('website_name_logo')->row();

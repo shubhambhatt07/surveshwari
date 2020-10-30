@@ -15,32 +15,6 @@
         </div>
         <!-- End Page Title -->
 
-
-
-
-            <div class="col-md-3">
-                            <label class="font-weight-bold">Country</label>
-                            <select name="country" class="countries form-control" id="countryId">
-                                <option value="">Select Country</option>
-                            </select>
-                        </div>
-                        <div class="col-md-3">
-                            <label class="font-weight-bold">State</label>
-                            <select name="state" class="states form-control" id="stateId">
-                                <option value="">Select State</option>
-                            </select>
-                        </div>
-                        <div class="col-md-3">
-                            <label class="font-weight-bold">City</label>
-                            <select name="city" class="cities form-control" id="cityId">
-                                <option value="">Select City</option>
-                            </select>
-                        </div>
-                        <div class="col-md-3">
-                            <label class="font-weight-bold">Zip Code</label>
-                            <input type="text" name="zip_code" class="form-control" placeholder="110017">
-                        </div>
-
         <!-- Start Checkout Area -->
 		<section class="checkout-area ptb-100">
             <div class="container">
@@ -57,13 +31,8 @@
                                                 <span class="required">*</span>
                                             </label>
                                             <div class="select-box">
-                                                <select class="form-control">
-                                                    <option value="5">United Arab Emirates</option>
-                                                    <option value="1">China</option>
-                                                    <option value="2">United Kingdom</option>
-                                                    <option value="0">Germany</option>
-                                                    <option value="3">France</option>
-                                                    <option value="4">Japan</option>
+                                                <select name="country" class="countries form-control" id="countryId">
+                                                    <option value="">Select Country</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -73,7 +42,7 @@
                                             <label>First Name 
                                                 <span class="required">*</span>
                                             </label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" name="first_name">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
@@ -81,45 +50,45 @@
                                             <label>Last Name 
                                                 <span class="required">*</span>
                                             </label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" name="last_name">
                                         </div>
                                     </div>
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="form-group">
-                                            <label>Company Name</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
+                                    
                                     <div class="col-lg-12 col-md-6">
                                         <div class="form-group">
                                             <label>Address 
                                                 <span class="required">*</span>
                                             </label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" name="full_address">
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-6">
                                         <div class="form-group">
-                                            <label>Town / City 
+                                            <label>State  
                                                 <span class="required">*</span>
                                             </label>
-                                            <input type="text" class="form-control">
+                                            <select name="state" class="states form-control" id="stateId">
+                                                <option value="">Select State</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
-                                            <label>State / County 
+                                            <label> City 
                                                 <span class="required">*</span>
                                             </label>
-                                            <input type="text" class="form-control">
+                                            <select name="city" class="cities form-control" id="cityId">
+                                                <option value="">Select City</option>
+                                            </select>
                                         </div>
                                     </div>
+                                    
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <label>Postcode / Zip 
                                                 <span class="required">*</span>
                                             </label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" name="zip_code">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
@@ -127,7 +96,7 @@
                                             <label>Email Address 
                                                 <span class="required">*</span>
                                             </label>
-                                            <input type="email" class="form-control">
+                                            <input type="email" class="form-control" name="email">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
@@ -135,26 +104,21 @@
                                             <label>Phone 
                                                 <span class="required">*</span>
                                             </label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" name="phone">
                                         </div>
                                     </div>
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="create-an-account">
-                                            <label class="form-check-label" for="create-an-account">Create an account?</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12">
+                                    
+                                    <!-- <div class="col-lg-12 col-md-12">
                                         <div class="form-check">
                                             <input type="checkbox" class="form-check-input" id="ship-different-address">
                                             <label class="form-check-label" for="ship-different-address">Ship to a different address?</label>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12">
+                                    </div> -->
+                                    <!-- <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <textarea name="notes" id="notes" cols="30" rows="5" placeholder="Order Notes" class="form-control"></textarea>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
