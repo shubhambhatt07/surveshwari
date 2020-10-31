@@ -32,16 +32,16 @@
 			                       <span>Dashboard</span>
 			                    </a>
 			                </li>
-			                <li class="nav-item dropdown">
-				            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				              <i class="fa fa-list-alt" aria-hidden="true"></i>
-				              <span>Category</span>
-				            </a>
-				            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-				              <a class="dropdown-item" href="<?=base_url('Category/categorySection')?>"><i class="fa fa-plus" aria-hidden="true"></i> <strong>Add Category</strong></a>
-				                <a class="dropdown-item" href="<?=base_url('Category/ViewcategorySection')?>"><i class="fa fa-eye" aria-hidden="true"></i> <strong> Category</strong></a>
-				            </div>
-				          </li>
+			               <!--  <li class="nav-item dropdown">
+					            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					              <i class="fa fa-list-alt" aria-hidden="true"></i>
+					              <span>Category</span>
+					            </a>
+					            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+					              <a class="dropdown-item" href="<?=base_url('Category/categorySection')?>"><i class="fa fa-plus" aria-hidden="true"></i> <strong>Add Category</strong></a>
+					                <a class="dropdown-item" href="<?=base_url('Category/ViewcategorySection')?>"><i class="fa fa-eye" aria-hidden="true"></i> <strong> Category</strong></a>
+					            </div>
+					          </li>
 			                <li class="nav-item dropdown">
 			                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			                       <i class="fa fa-user" aria-hidden="true"></i>
@@ -52,7 +52,7 @@
 			                        <a class="dropdown-item" href="<?=base_url('Products/ViewProductSection')?>"> <i class="fa fa-users" aria-hidden="true"></i><strong> Products</strong></a>
 			             	    </div>
 			                </li>
-			                 <li class="nav-item dropdown">
+			                <li class="nav-item dropdown">
 			                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			                       <i class="fa fa-user" aria-hidden="true"></i>
 			                       <span>Delivery Boy</span>
@@ -80,7 +80,7 @@
 			                    <div class="dropdown-menu" aria-labelledby="pagesDropdown">                     
 			                        <a class="dropdown-item" href="<?=base_url('Admin/QRsection')?>"><i class="fa fa-eye" aria-hidden="true"></i> <strong>Add QR</strong></a>
 			              	    </div>
-			                </li>
+			                </li> -->
 			                <li class="nav-item dropdown">
 			                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			                       <i class="fa fa-building" aria-hidden="true"></i>
@@ -90,52 +90,52 @@
 			                        <a class="dropdown-item" href="<?=base_url('Admin/ordersSection')?>"><i class="fa fa-eye" aria-hidden="true"></i> <strong>Orders</strong></a>
 			              	    </div>
 			                </li>
-				           <li class="nav-item dropdown">
-				            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				            <i class="fa fa-users" aria-hidden="true"></i>
-				              <span>Feedback</span>
-				            </a>
-				            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-				              
-				             <a class="dropdown-item" href="<?=base_url('Users/UsersFeedbackSection')?>"><i class="fa fa-eye" aria-hidden="true"></i> <strong>Users Feedback</strong></a>
-				              
-				             
-				            </div>
-				          </li>
-				          <li class="nav-item dropdown">
-				            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				              <i class="fa fa-male" aria-hidden="true"></i>
-				              <span>Reviews</span>
-				            </a>
-				            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-				            
-				               <a class="dropdown-item" href="<?=base_url('Users/UsersReviewsSection')?>"><i class="fa fa-eye" aria-hidden="true"></i> <strong>Users Reviews</strong></a>
-				                    
-				            </div>
-				          </li>
+					      <!--   <li class="nav-item dropdown">
+					            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					            <i class="fa fa-users" aria-hidden="true"></i>
+					              <span>Feedback</span>
+					            </a>
+					            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+					              
+					             <a class="dropdown-item" href="<?=base_url('Users/UsersFeedbackSection')?>"><i class="fa fa-eye" aria-hidden="true"></i> <strong>Users Feedback</strong></a>
+					              
+					             
+					            </div>
+					        </li> -->
+					        <!-- <li class="nav-item dropdown">
+					            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					              <i class="fa fa-male" aria-hidden="true"></i>
+					              <span>Reviews</span>
+					            </a>
+					            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+					            
+					               <a class="dropdown-item" href="<?=base_url('Users/UsersReviewsSection')?>"><i class="fa fa-eye" aria-hidden="true"></i> <strong>Users Reviews</strong></a>
+					                    
+					            </div>
+					        </li>
 
-				          <li class="nav-item dropdown">
-				            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				              <i class="fa fa-male" aria-hidden="true"></i>
-				              <span>Website Details</span>
-				            </a>
-				            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-				            
-				               <a class="dropdown-item" href="<?=base_url('Admin/webDetails')?>"><i class="fa fa-eye" aria-hidden="true"></i> <strong>Website Details</strong></a>
-				                    
-				            </div>
-				          </li>
+					        <li class="nav-item dropdown">
+					            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					              <i class="fa fa-male" aria-hidden="true"></i>
+					              <span>Website Details</span>
+					            </a>
+					            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+					            
+					               <a class="dropdown-item" href="<?=base_url('Admin/webDetails')?>"><i class="fa fa-eye" aria-hidden="true"></i> <strong>Website Details</strong></a>
+					                    
+					            </div>
+					        </li> -->
 				          
-				          <li class="nav-item dropdown">
-				            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				             <i class="fa fa-usd"></i>
-				              <span>Users</span>
-				            </a>
-				            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-				              <!-- <a class="dropdown-item" href="<?=base_url('Expense/addExpenseSection')?>"><i class="fa fa-plus" aria-hidden="true"></i> <strong>Add Users</strong> </a> -->
-				              <a class="dropdown-item" href="<?=base_url('Users/UsersDetailSection')?>"><i class="fa fa-eye" aria-hidden="true"></i> <strong>Users</strong> </a>    
-				            </div>
-				          </li>
+					        <li class="nav-item dropdown">
+					            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					             <i class="fa fa-usd"></i>
+					              <span>Users</span>
+					            </a>
+					            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+					              <!-- <a class="dropdown-item" href="<?=base_url('Expense/addExpenseSection')?>"><i class="fa fa-plus" aria-hidden="true"></i> <strong>Add Users</strong> </a> -->
+					              <a class="dropdown-item" href="<?=base_url('Users/UsersDetailSection')?>"><i class="fa fa-eye" aria-hidden="true"></i> <strong>Users</strong> </a>    
+					            </div>
+					        </li>
 				          
 				         
 				         

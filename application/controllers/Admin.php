@@ -150,9 +150,8 @@
 			$this->load->view('admin/Pages/webDetails',$data);
 			
 	 	}
-	 	public function updatewebdetails()
-	 	{
-	 			if(!empty($_FILES['userfile']['name']))
+	 	public function updatewebdetails(){
+	 		if(!empty($_FILES['userfile']['name']))
 	    	{    
 	       		// $ext = pathinfo($_FILES['userfile']['name'], PATHINFO_EXTENSION);
 	       		// $_FILES['file']['name'] = "category_image-".date("Y-m-d-H-i-s").$ext;
@@ -335,7 +334,8 @@
 
             }
            $newAr[]=array_merge($orderDetail,array("product_Detail"=>$productsArr));
-            
+            // print_r($newAr);
+            // die(json_encode($newAr));
            $data['fetchorders']=$newAr;
             $this->load->view('admin/Layout/header');
             $this->load->view('admin/Pages/viewOrderDetails',$data);

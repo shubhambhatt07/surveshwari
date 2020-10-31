@@ -124,5 +124,9 @@ class Product_model extends CI_Model
 			{
 				return 0;
 		    }
+	}
+	public function getorders(){
+		// $this->db->join('categories','categories.id =crops_.veg_category');      
+		return $this->db->order_by('order_id','desc')->get('orders_')->result();
 	} 
 }

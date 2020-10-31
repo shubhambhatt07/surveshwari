@@ -11,10 +11,11 @@
 
 // print_r($fetchorders['data']);
 
-$orderItem=$fetchorders['data'];
-
+$orderItem=$fetchorders[0];
+$cartDetails=unserialize($orderItem['cart_details']);
+$cartDetails=$cartDetails[0];
 // echo '*********************************************************************************************';
-//   print_r(json_encode($fetchorders));
+//   print_r(json_encode($cartDetails));
 // die;
 ?>
 
@@ -37,36 +38,37 @@ $orderItem=$fetchorders['data'];
                             <th class="font text-center">Total Amount</th>
                             
                             
-                            <th class="font text-center">Deivery Asssinged To</th>
+                            <!-- <th class="font text-center">Deivery Asssinged To</th> -->
                             <th class="font text-center">Payment</th>
-                            <th class="font text-center">Order</th>
+                            <!-- <th class="font text-center">Order</th> -->
                         </tr>
                     </thead>
                     <tbody>
-                      <?php $i=1?>
+                      <?php $i=0?>
                     
                         <tr>
-                          <td><?='Order Id'?></td>
-                          <td>dd</td>
+                          <td><?=$i+1?></td>
+                          <td><?=$orderItem['order_id']?></td>
                           <td>
                             <?php
-                            // print_r($assigned_to);
+                            // print_r($orderItem['product_Detail']);
                             ?>
+                            <!-- die; -->
                             <table width="100%">
-                              <?php foreach($orderItem as $item): ?>
+                              <?php foreach($orderItem['product_Detail'] as $item): ?>
                                 <tr>
-                                  <!-- <?php  print_r($item); ?> -->
-                                  <td><?=$item['product_detail']->name?></td>
-                                  <td><?=$item['qty'].' '.$item['product_detail']->quant_type?></td>
+                                  <!-- <?php  print_r($cartDetails); ?>  -->
+                                  <td><?=$item['name']?></td>
+                                  <td><?=$cartDetails['quantity'][$i].' '.$item['quant_type']?></td> 
                                 </tr>
-                               
+                               <?php $i++?>
                               <?php endforeach; ?>
                             </table>
                           </td>
-                          <td><strong> &#8377; </strong><?=$fetchorders['total_price']?> </td>
-                          <td><?=ucwords($assigned_to->name)  ?></td>
+                          <td><strong> &#8377; </strong><?=$cartDetails['order_amount']?> </td>
+                        
                           <td><?='Payment Pending' ?></td>
-                          <td><?=ucwords($assigned_to->order_status)  ?></td>
+                          
                          
                         </tr>
                     </tbody>             
