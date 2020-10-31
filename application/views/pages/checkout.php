@@ -7,7 +7,7 @@
                 <div class="page-title-content">
                     <h2>Checkout</h2>
                     <ul>
-                        <li><a href="index-2.html">Home</a></li>
+                        <li><a href="<?=base_url('Home')?>">Home</a></li>
                         <li>Checkout</li>
                     </ul>
                 </div>

@@ -353,47 +353,7 @@
         <!-- End Clients Area -->
 
         <!-- Start Partner Area -->
-        <section class="partner-area pb-100">
-            <div class="container">
-                <div class="partner-slider owl-carousel owl-theme">
-                    <div class="partner-item">
-                        <a href="#">
-                            <img src="<?=base_url()?>assets/img/partner/partner1.png" alt="image">
-                        </a>
-                    </div>
-
-                    <div class="partner-item">
-                        <a href="#">
-                            <img src="<?=base_url()?>assets/img/partner/partner2.png" alt="image">
-                        </a>
-                    </div>
-
-                    <div class="partner-item">
-                        <a href="#">
-                            <img src="<?=base_url()?>assets/img/partner/partner3.png" alt="image">
-                        </a>
-                    </div>
-
-                    <div class="partner-item">
-                        <a href="#">
-                            <img src="<?=base_url()?>assets/img/partner/partner4.png" alt="image">
-                        </a>
-                    </div>
-
-                    <div class="partner-item">
-                        <a href="#">
-                            <img src="<?=base_url()?>assets/img/partner/partner5.png" alt="image">
-                        </a>
-                    </div>
-
-                    <div class="partner-item">
-                        <a href="#">
-                            <img src="<?=base_url()?>assets/img/partner/partner6.png" alt="image">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
         <!-- End Partner Area -->
 
        
@@ -403,13 +363,11 @@
         <!-- End Footer Area -->
 
         <!-- Start Go Top Area -->
-        <div class="go-top">
-            <i class='bx bx-chevron-up'></i>
-        </div>
+        
         <!-- End Go Top Area -->
 
         <!-- Start QuickView Modal Area -->
-        <div class="modal fade productsQuickView" id="productsQuickView" tabindex="-1" role="dialog" aria-hidden="true">
+       <!--  <div class="modal fade productsQuickView" id="productsQuickView" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -517,6 +475,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- End QuickView Modal Area -->
     

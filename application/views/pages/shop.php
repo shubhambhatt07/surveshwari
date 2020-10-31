@@ -20,24 +20,10 @@
                     <div class="row align-items-center">
                         <div class="col-lg-8 col-md-7 col-sm-6">
                             <div class="woocommerce-result-count">
-                                <p>Showing 1-8 of 14 results</p>
+                                <p>Showing <?=count($crops_)?> results</p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-5 col-sm-6">
-                            <div class="woocommerce-topbar-ordering">
-                                <select>
-                                    <option value="1">Default sorting</option>
-                                    <option value="2">Catwalk Juniors Clothing</option>
-                                    <option value="0">Too Tempted Clubwear</option>
-                                    <option value="3">Red Betty Boutique</option>
-                                    <option value="4">Hot Head Threads</option>
-                                    <option value="5">Fringe Apparel for Juniors</option>
-                                    <option value="6">Proud Mama Maternity</option>
-                                    <option value="6">South City Streetwear</option>
-                                    <option value="6">Porcelain Apparel</option>
-                                </select>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -121,7 +107,7 @@
         <section class="discover-area pb-100">
             <div class="container">
                 <div class="section-title">
-                    <h2>Discover Xenoz Product</h2>
+                    <h2>Discover OUr Product</h2>
                 </div>
 
                 <div class="discover-slider owl-carousel owl-theme">

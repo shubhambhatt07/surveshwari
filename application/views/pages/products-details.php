@@ -65,32 +65,7 @@
                                     <!-- <a href="#" class="btn btn-light">Buy it now!</a> -->
                                 </div>
                             </div>
-                            <div class="custom-payment-options">
-                                <span>Guaranteed safe checkout:</span>
-                                <div class="payment-methods">
-                                    <a href="#">
-                                        <img src="<?=base_url()?>assets/img/payment/1.svg" alt="image">
-                                    </a>
-                                    <a href="#">
-                                        <img src="<?=base_url()?>assets/img/payment/2.svg" alt="image">
-                                    </a>
-                                    <a href="#">
-                                        <img src="<?=base_url()?>assets/img/payment/3.svg" alt="image">
-                                    </a>
-                                    <a href="#">
-                                        <img src="<?=base_url()?>assets/img/payment/4.svg" alt="image">
-                                    </a>
-                                    <a href="#">
-                                        <img src="<?=base_url()?>assets/img/payment/5.svg" alt="image">
-                                    </a>
-                                    <a href="#">
-                                        <img src="<?=base_url()?>assets/img/payment/6.svg" alt="image">
-                                    </a>
-                                    <a href="#">
-                                        <img src="<?=base_url()?>assets/img/payment/7.svg" alt="image">
-                                    </a>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
 
