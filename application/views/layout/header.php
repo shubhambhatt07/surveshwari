@@ -30,7 +30,7 @@
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <title>Spices</title>
+        <title>Surveshwari Masale</title>
 
         <link rel="icon" type="image/png" href="<?=base_url()?>assets/img/favicon.png">
     </head>
@@ -127,9 +127,9 @@
                                 <li class="nav-item">
                                     <a href="<?=base_url('Home/Contact')?>" class="nav-link">Contact</a>
                                 </li>
-                                <!--  <li class="nav-item">
+                                  <li class="nav-item">
                                     <a href="<?=base_url('Home/About')?>" class="nav-link">About</a>
-                                </li> -->
+                                </li> 
                             </ul>
 
                             <div class="others-option d-flex align-items-center">

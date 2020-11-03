@@ -6,7 +6,7 @@
                 <div class="page-title-content">
                     <h2>Privacy Policy</h2>
                     <ul>
-                        <li><a href="index-2.html">Home</a></li>
+                        <li><a href="<?=base_url()?>">Home</a></li>
                         <li>Privacy Policy</li>
                     </ul>
                 </div>
@@ -18,29 +18,33 @@
         <section class="privacy-policy-area ptb-100">
             <div class="container">
 				<div class="privacy-content">
-					<h3>1. Welcome to Xenoz Privacy Policy</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<h3>1. What data we collect</h3>
+                    <p>When you place an order through our website (www.sarveshwarimasale.com), we gather data from you. While registering or ordering from our website, you might be approached to enter your details such as complete name, postal location, contact number, email address, and payment details.</p>
                     
-                    <h3>2. Shop You Provide to Us</h3>
-                    <p>We may collect different shop from or about you depending on how you use the Services. Below are some examples to help you better understand the shop we collect.</p>
-                    <h3>3. How We Get Shop About You</h3>
-                    <p>We use tools like cookies, web beacons, analytics services, and advertising providers to gather the shop listed above. Some of these tools offer you the ability to opt out of shop collection.</p>
-                    <h3>4. What We Use Your Shop For</h3>
+                    <h3>2. Use of cookies</h3>
+                    <p>Our site utilizes cookies to follow the device on which you peruse our website. We value your protection and henceforth, we don't utilize cookies to store or send your information. However, most browsers naturally acknowledge cookies, you can generally have a choice to debilitate our utilization of cookies.</p>
+                    <h3>3. How we use your information</h3>
+                    <p>We may employ the data provided by you in the accompanying customs: </p>
+                   
                     <ol>
-                        <li>Responding to your questions and concerns;</li>
-                        <li>Sending you administrative messages and information, including messages from instructors and teaching assistants, notifications about changes to our Service, and updates to our agreements;</li>
-                        <li>Sending push notifications to your wireless device to provide updates and other relevant messages (which you can manage from the “options” or “settings” page of the mobile app);</li>
+                        <li>To process your transaction: Yes, we utilize your information for handling your transactions on our website. In any case, without your assent, we will never sell, trade, move or give your information to some other organization or individual under any conditions, except for the express reason for conveying the ordered item requested by you.</li>
+                        <li> To send you intermittent emails: We may utilize the email address given by you to send you to order information and/or payment details and/or occasional company updates and/or product offers.</li>
+                        
                     </ol>
-                    <h3>5. Your Choices About the Use of Your Shop</h3>
-                    <p>You can choose not to provide certain shop to us, but you may not be able to use certain features of the Services.</p>
-                    <ul>
-                        <li>To stop receiving promotional communications from us, you can opt out by using the unsubscribe mechanism in the promotional communication you receive or by changing the email preferences in your account. Note that regardless of your email preference settings, we will send you transactional and relationship messages regarding the Services, including administrative confirmations, order confirmations, important updates about the Services, and notices about our policies.</li>
-                        <li>The browser or device you use may allow you to control cookies and other types of local shop storage. Your wireless device may also allow you to control whether location or other shop is collected and shared. You can manage Adobe’s LSOs through their Website Storage Settings panel.</li>
-                        <li>To get information and control cookies used for tailored advertising from participating companies, see the consumer opt-out pages for the Network Advertising Initiative and Digital Advertising Alliance, or if you’re located in the European Union, visit the Your Online Choices site. To opt out of Google’s display advertising or customize Google Display Network ads, visit the Google Ads Settings page. To opt out of Taboola’s targeted ads, see the Opt-out Link in their Cookie Policy.</li>
-                        <li>To update shop you provide directly, log into your account and update your account at any time.</li>
-                    </ul>
+                     <h3>4. With whom we share your information</h3>
+                    <p>We don't sell, exchange, move or give your data to outside companies aside from the confided third parties who help us in dealing with our website and leading our business in the most ideal manner, as these companies keep this data private. We may likewise deliver your data when we accept to have consented to it a suitable delivery that conforms to the law, implements our site approaches, or potentially secures the rights, property, and wellbeing of us or others. Nonetheless, the data on non-actually recognizable site visitors might be given to other parties to promote, publicizing, or any such reason.</p>
+                    <h3>5. How we protect your information</h3>
+                    <p>Your information is in secured hands on http://www.sarveshwarimasale.com/. We deploy multiple security devices to keep your personal information safe. All your sensitive/credit information is communicated through SSL (Secure Socket Layer) innovation and afterward encoded into the information base of our Payment Gateway suppliers. And after a successful transaction through our website, we don’t store your personal data such as financials, credit card details, social security numbers, etc. on our servers.</p>
                     <h3>6. Our Policy Concerning Children</h3>
                     <p>We recognize the privacy interests of children and encourage parents and guardians to take an active role in their children’s online activities and interests. Children under 13 (or under 16 in the European Economic Area) should not use the Services. If we learn that we’ve collected personal shop from a child under those ages, we will take reasonable steps to delete it.</p>
+                    <h3>7. Opt-out policy</h3>
+                    <p>In the event that you no longer need to get information from us, you may unsubscribe whenever you wish.</p>
+                    <h3>8. Online Privacy Policy only</h3>
+                    <p>This is just the online Privacy Policy which is material just to the data we gather through our site and not through any offline methods. </p>
+                    <h3>9. Changes to Privacy Policy</h3>
+                    <p>We maintain all authority to correct or refresh this Privacy Policy whenever without notice. Such changes in this arrangement will be promptly powerful from the time it is presented on the website. Hence, you are encouraged to peruse our Privacy Policy each time you visit our site. </p>
+                    <h3>10. Contact information</h3>
+                    <p>Should you have any problems or issues with respect to this Privacy Policy, you may reach us employing the accompanying data: www.sarveshwarimasale.com (sarveshwarimasale@outlook.com) (9425269322, 7489837080). </p>    
 				</div>
             </div>
         </section>

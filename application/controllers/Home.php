@@ -21,14 +21,26 @@
 	 	}
 	 	public function About(){
 	 		$data['categories']=$this->getCategories();
-	 		$this->load->view('layout/header');
+	 		$this->load->view('layout/header',$data);
 	 		$this->load->view('pages/about');
 	 		$this->load->view('layout/footer');
 	 	}
 	 	public function Contact(){
 	 		$data['categories']=$this->getCategories();
-	 		$this->load->view('layout/header');
+	 		$this->load->view('layout/header',$data);
 	 		$this->load->view('pages/contact');
+	 		$this->load->view('layout/footer');
+	 	}
+	 	public function privacy_policy(){
+	 		$data['categories']=$this->getCategories();
+	 		$this->load->view('layout/header',$data);
+	 		$this->load->view('pages/privacy-policy');
+	 		$this->load->view('layout/footer');
+	 	}
+	 	public function terms_service(){
+	 		$data['categories']=$this->getCategories();
+	 		$this->load->view('layout/header',$data);
+	 		$this->load->view('pages/terms-of-service');
 	 		$this->load->view('layout/footer');
 	 	}
 	 	

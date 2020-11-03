@@ -81,17 +81,15 @@
     
                             <ul class="quick-links">
                                 <li>
-                                    <a href="<?=base_url('Home/index')?>">Home</a>
+                                    <a href="<?=base_url('Home')?>">Home</a>
                                 </li>
+                                <li>
+                                    <a href="<?=base_url('Home/About')?>">About Us</a>
+                                </li> 
+                               
                                <!--  <li>
-                                    <a href="<?=base_url('Home/index')?>">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Store Locations</a>
-                                </li>
-                                <li>
                                     <a href="checkout.html">Checkout</a>
-                                </li> -->
+                                </li>  -->
                                 
                                 </li>
                                 <li>
@@ -106,24 +104,16 @@
                             <h3>Customer Service</h3>
     
                             <ul class="quick-links">
-                                <li>
-                                    <a href="#">Help Center</a>
-                                </li>
-                                <li>
-                                    <a href="#">Store Locations</a>
-                                </li>
+                              
                                 <li>
                                     <!-- <a href="privacy-policy.html">Privacy Policy</a> -->
-                                     <a href="#">Privacy Policy</a>
+                                     <a href="<?=base_url('Home/privacy_policy/')?>">Privacy Policy</a>
                                 </li>
                                 <li>
                                     <!-- <a href="terms-of-service.html">Terms of Service</a> -->
-                                     <a href="#">Terms of Service</a>
+                                     <a href="<?=base_url('Home/terms_service/')?>">Terms of Service</a>
                                 </li>
-                                
-                                <li>
-                                    <a href="#">Sitemap</a>
-                                </li>
+                               
                             </ul>
                         </div>
                     </div>

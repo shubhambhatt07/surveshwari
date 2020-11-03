@@ -141,7 +141,7 @@
                          <img height="202" width="202"src="<?=base_url()?>assets/images/satisfaction.png" alt="image">
                         </div>
                         <h3>100% Satisfaction</h3>
-                        <p>There are many variations</p>
+                        <p>Quality products with secured payments.</p>
                     </div>
 
                     <div class="discover-item">
@@ -150,7 +150,7 @@
                              <img style="height:202 !important;width:202 !important"src="<?=base_url()?>assets/images/shopscountries.png" alt="image">
                         </div>
                         <h3>Shop in  60 Countries</h3>
-                        <p>There are many variations</p>
+                        <p>Delivery to 50+ pincodes.</p>
                     </div>
 
                     <div class="discover-item">
@@ -159,7 +159,7 @@
                              <img height="202" width="202"src="<?=base_url()?>assets/images/Shipment.png" alt="image">
                         </div>
                         <h3>Fast Shipment</h3>
-                        <p>There are many variations</p>
+                        <p>Accelerated &amp; assured delivery.</p>
                     </div>
 
                     <div class="discover-item">
@@ -168,7 +168,7 @@
                              <img height="202" width="202"src="<?=base_url()?>assets/images/MoneyBack.png" alt="image">
                         </div>
                         <h3>Money Back</h3>
-                        <p>There are many variations</p>
+                        <p>We guarantee customer satisfaction.</p>
                     </div>
 
                     <div class="discover-item">
@@ -177,7 +177,7 @@
                              <img height="202" width="202"src="<?=base_url()?>assets/images/Support.png" alt="image">
                         </div>
                         <h3>24/7 Customer Service</h3>
-                        <p>There are many variations</p>
+                        <p>Honest, open &amp; responsible support./p>
                     </div>
                 </div>
             </div>

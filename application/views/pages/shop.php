@@ -43,16 +43,7 @@
                                                 <i class="flaticon-shopping-cart"></i>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="flaticon-transfer"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="flaticon-heart"></i>
-                                            </a>
-                                        </li>
+                                       
                                         <li>
                                             <a href="#" data-toggle="modal" data-target="#productsQuickView">
                                                 <i class="flaticon-loupe"></i>
@@ -65,7 +56,9 @@
                                     </div>
 
                                     <div class="shop-btn">
-                                        <a href="#" class="default-btn">Add To Cart</a>
+                                        <a href="javascript:void(0)" class="default-btn cartt" product="<?=$item->product_id?>">Add to cart
+                                    </a>
+                                       
                                     </div>
                                 </div>
 
@@ -74,23 +67,7 @@
                                         <a href="<?=base_url('Shop/productDetails')?>"><?=$item->name?></a>
                                     </h3>
                                     <span><?=$item->price?></span>
-                                    <ul class="star-list">
-                                        <li>
-                                            <i class="flaticon-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="flaticon-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="flaticon-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="flaticon-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="flaticon-star"></i>
-                                        </li>
-                                    </ul>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -154,122 +131,29 @@
             </div>
         </section>
   
-        <!-- Start Go Top Area -->
-        <div class="go-top">
-            <i class='bx bx-chevron-up'></i>
-        </div>
-        <!-- End Go Top Area -->
-
-        <!-- Start QuickView Modal Area -->
-        <div class="modal fade productsQuickView" id="productsQuickView" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class='bx bx-x'></i></span>
-                    </button>
-
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="products-image">
-                                <img src="assets/img/quick-view-img.jpg" alt="image">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6">
-                            <div class="products-content">
-                                <h3><a href="#">Our Special Xenoz Products</a></h3>
-
-                                <div class="price">
-                                    <span class="old-price">$210.00</span>
-                                    <span class="new-price">$200.00</span>
-                                </div>
-
-                                <div class="products-review">
-                                    <div class="rating">
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                    </div>
-                                    <a href="#" class="rating-count">3 reviews</a>
-                                </div>
-
-                                <ul class="products-info">
-                                    <li><span>Vendor:</span> <a href="#">Lereve</a></li>
-                                    <li><span>Availability:</span> <a href="#">In stock (7 items)</a></li>
-                                    <li><span>Products Type:</span> <a href="#">T-Shirt</a></li>
-                                </ul>
-
-                                <div class="products-color-switch">
-                                    <h4>Color:</h4>
-
-                                    <ul>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Black" class="color-black"></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="White" class="color-white"></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Green" class="color-green"></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Yellow Green" class="color-yellowgreen"></a></li>
-                                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Teal" class="color-teal"></a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="products-size-wrapper">
-                                    <h4>Size:</h4>
-
-                                    <ul>
-                                        <li><a href="#">XS</a></li>
-                                        <li class="active"><a href="#">S</a></li>
-                                        <li><a href="#">M</a></li>
-                                        <li><a href="#">XL</a></li>
-                                        <li><a href="#">XXL</a></li>
-                                    </ul>
-                                </div>
-
-                                <div class="products-add-to-cart">
-                                    <div class="input-counter">
-                                        <span class="minus-btn"><i class='bx bx-minus'></i></span>
-                                        <input type="text" value="1">
-                                        <span class="plus-btn"><i class='bx bx-plus'></i></span>
-                                    </div>
-
-                                    <button type="submit" class="default-btn">Add to Cart</button>
-                                </div>
-
-                                <ul class="share">
-                                    <li>
-                                        <span>Share:</span>
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="#" target="_blank">
-                                            <i class="flaticon-twitter"></i>
-                                        </a>
-                                    </li>
-                
-                                    <li>
-                                        <a href="#" target="_blank">
-                                            <i class="flaticon-instagram"></i>
-                                        </a>
-                                    </li>
-                
-                                    <li>
-                                        <a href="#" target="_blank">
-                                            <i class="flaticon-facebook"></i>
-                                        </a>
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="#" target="_blank">
-                                            <i class="flaticon-linkedin"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
         <!-- End QuickView Modal Area -->
+        <script type="text/javascript">
+                $(document).ready(function(){
+                    var cartUrl="<?=base_url('Cart/addToCart/')?>";
+                    $('.cartt').on('click',function(){
+                        var product_id=$(this).attr('product');
+                        // alert("Product Id: "+product_id);
+                        $.ajax({
+                            url:cartUrl,
+                            type:"post",
+                            data:{product_id:product_id},
+                            success:function(response){
+                                response=JSON.parse(response);
+                                if(response.code==1){                            
+                                 swal("Good job!", "Item Added To Cart", "success");
+                                }else{
+                                    swal("Ooops!", "Failed to Add!", "warning");
+                                }
+                            }
+                        })
+                    });
+                });
+            </script>
         
        

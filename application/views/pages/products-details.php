@@ -47,7 +47,7 @@
                                     <span></span></a>
                                 
                             </div>
-                            <div class="buy-checkbox-btn">
+                       <!--      <div class="buy-checkbox-btn">
                                 <div class="item">
                                     <input class="inp-cbx" id="cbx" type="checkbox">
                                     <label class="cbx" for="cbx">
@@ -62,9 +62,9 @@
                                 <div class="item">
                                     <a href="javascript:void(0)" class="btn btn-light cartt" product="<?=$crops_->product_id?>">Buy it now!
                                     <span></span></a>
-                                    <!-- <a href="#" class="btn btn-light">Buy it now!</a> -->
+                                    <a href="#" class="btn btn-light">Buy it now!</a> 
                                 </div>
-                            </div>
+                            </div> -->
                             
                         </div>
                     </div>
