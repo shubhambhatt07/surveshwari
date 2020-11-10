@@ -262,10 +262,18 @@
                                     <div class="new">
                                         <span>New</span>
                                     </div>
-    
+                                    <?php 
+                                    if($this->session->userdata('login'))
+                                    {?>
                                     <div class="shop-btn">
                                         <a href="javascript:void(0)" class="default-btn cartt" product="<?=$pro->product_id?>">Add To Cart</a>
                                     </div>
+                                     <?php  }
+                                    else{
+                                        ?>
+                                        <a href="#" id="notset" class="default-btn cartt">Add To Cart</a>
+                                        <?php
+                                    }?>
                                 </div>
     
                                 <div class="content">
@@ -420,10 +428,19 @@
                                 if(response.code==1){                            
                                  swal("Good job!", "Item Added To Cart", "success");
                                 }else{
-                                    swal("Ooops!", "Failed to Add!", "warning");
+                                    swal("Ooops!", "Login first!", "warning");
                                 }
                             }
                         })
+                    });
+                });
+            </script>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                
+                    $('#notset').on('click',function(){
+                       swal("Ooops!", "Login first!", "warning");
+                       
                     });
                 });
             </script>

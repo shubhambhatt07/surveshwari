@@ -28,13 +28,15 @@
 
 	 	}
 	 	public function orderConfirmation(){
+	 		// print_r($_SESSION);
+	 		// print_r($_POST);
 	 		$data['categories']=$this->db->order_by('rand()')->get('categories')->result();
 	 		// echo 'good to go ';
 	 		$data['webDetail']=$this->db->get('website_name_logo')->row();
 	 		$data['gallery_']=$this->db->join('categories','categories.id= crops_.veg_category')->order_by('rand()')->get('crops_')->result();
-	 		$this->load->view('common/header',$data);
+	 		 $this->load->view('layout/header',$data);
 	 		$this->load->view('pages/orderConfirmed');
-	 		$this->load->view('common/footer');
+	 		$this->load->view('layout/footer');
 	 	}
 
 	 	public function orderPlaced(){
@@ -109,14 +111,15 @@
 		 		}else{
 		 			$this->session->set_flashdata('msg','Order Already Exists.');
 		 		}	
-	 		// }else{
+	 		// }
+	 		// else{
 	 		// 	redirect('Home');
 	 		// }
-	 		echo $this->session->set_flashdata('msg');
+	 		  $this->session->set_flashdata('msg');
 	 		// print_r($orderDetails);
-	 		// $this->load->view('layout/header',$data);
-	 		// $this->load->view('pages/orderPlaced');
-	 		// $this->load->view('common/footer');
+	 		$this->load->view('layout/header',$data);
+	 		$this->load->view('pages/orderPlaced');
+	 		$this->load->view('common/footer');
 	 	}
 	 	
 	 	public function addToCart(){

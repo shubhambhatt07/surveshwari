@@ -174,16 +174,28 @@
                                             <input type="radio" id="paypal" name="radio-group">
                                             <label for="paypal">PayPal</label>
                                         </p> -->
-                                        <p>
+                                        <!-- <p>
                                             <input type="radio" id="paypal" name="payumoney">
                                             <label for="paypal">Payumoney</label>
                                         </p>
                                         <p>
                                             <input type="radio" id="cash-on-delivery" name="radio-group">
                                             <label for="cash-on-delivery">Cash on Delivery</label>
-                                        </p>
+                                        </p> -->
+                                         <div class="custom-control custom-radio">
+                                    <input id="credit" value="online" name="paymentMethod" type="radio" class="custom-control-input"  required>
+                                    <label class="custom-control-label" for="credit">Online</label>
+                                </div>
+                                 <div class="custom-control custom-radio">
+                                    <input id="cod" name="paymentMethod" type="radio" value="c_o_d" class="custom-control-input"  required>
+                                    <label class="custom-control-label" for="cod">Cash On Delivery</label>
+                                </div>
                                     </div>
-                                    <input type="submit" class="default-btn order-btn" value="Place Order">
+                                    
+                                <div class="col-12 d-flex shopping-box" id="placOrde"> <a href="<?=base_url('Cart/orderConfirmation')?>" class="ml-auto default-btn  btn hvr-hover">Place Order</a> 
+                                </div>
+                              
+                                    <!-- <input type="submit" class="default-btn order-btn" value="Place Order"> -->
                                     
                                 </div>
                             </div>

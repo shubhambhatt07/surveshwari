@@ -2,8 +2,8 @@
 //  echo 'Emaou:'.$eventData[0]->amount_to_pay;
 // print_r($eventData);
 
-$merchantKey='QQypU6ma';
-$saltKey='v3iRO6zZVM';
+$merchantKey='4109Q5HD';
+$saltKey='c4CdbRKEu4';
 
 if(strcasecmp($_SERVER['REQUEST_METHOD'], 'POST') == 0){
 	//Request hash
@@ -32,7 +32,7 @@ function getCallbackUrl()
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Globe Racers</title>
+<title></title>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
@@ -113,7 +113,7 @@ color="e34524" bolt-logo="http://boltiswatching.com/wp-content/uploads/2015/09/B
 <script type="text/javascript"><!--
 $('#payment_form').bind('keyup blur', function(){
 	$.ajax({
-          url: '<?=base_url('User/payumoney/').$eventData[0]->event_id?>',
+          url: '<?=base_url('Payments/Payumoneyyyy/')?>',
           type: 'post',
           data: JSON.stringify({ 
             key: '<?=$merchantKey?>',
