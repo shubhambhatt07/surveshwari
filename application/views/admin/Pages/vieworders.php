@@ -23,7 +23,7 @@
                             <th class="font text-center">Order Details</th>
                              
                             <th class="font text-center">Delivery Status</th>
-                            <th class="font text-center">Delivery Boy</th>
+                            <!-- <th class="font text-center">Delivery Boy</th> -->
                             <th class="font text-center">Total Amount</th>
                             
                             
@@ -44,7 +44,7 @@
                 ?>
                   <tr>
                     <td><?=$i?></td>
-                    <td><?=$deliveryDetails['fullname']?></td>
+                    <td><?=$deliveryDetails['fullName']?></td>
                     <td><a href="<?=base_url('Admin/viewOrderDetails/').$row['order_id']?>">View Order</a>
                       <?php
                         $product_Detail=$row['product_Detail'];
@@ -60,9 +60,9 @@
                          <option selected=""><?=$row['order_status']?></option>
                       </select>
                      </td>
-                      <td>
+                      <!-- <td>
                         <a href="javascript:void(0)"class="assign" order_id="<?=$row['order_id']?>">Assign</a>
-                      </td>
+                      </td> -->
                     <td><strong>&#8377;</strong> <?=$cartDet[0]['order_amount']?></td>
                     
                     <td><a href="javascript:void(0)" product_id="" class="w-100 rounded-pill border-0 p-2 text-white font-weight-bold butn-style1 deleteproduct"><?=$row['amount_status']?></a></td>

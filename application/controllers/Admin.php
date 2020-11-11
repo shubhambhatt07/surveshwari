@@ -313,7 +313,7 @@
             // print_r($newAr);
                  
                            // print_r($orderDetail);
-            // print_r($productsArr);
+         //    print_r($newAr);
        		// die;
        		$this->load->view('admin/Layout/header');
 			$this->load->view('admin/Pages/vieworders',$data);

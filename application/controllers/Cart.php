@@ -27,6 +27,9 @@
 	 		}
 
 	 	}
+	 	public function payumoney(){
+
+	 	}
 	 	public function orderConfirmation(){
 	 		// print_r($_SESSION);
 	 		// print_r($_POST);
@@ -43,6 +46,10 @@
 	 		// die(json_encode($_POST));
 	 		
 	 		// {"country":"","first_name":"sdf","last_name":"sdf","full_address":"sd","state":"","city":"","zip_code":"sdf","email":"sfs@sdsnom","phone":"sdf","payumoney":"on"}
+	 		$data['categories']=$this->db->order_by('rand()')->get('categories')->result();
+	 		// echo 'good to go ';
+	 		$data['webDetail']=$this->db->get('website_name_logo')->row();
+	 		$data['gallery_']=$this->db->join('categories','categories.id= crops_.veg_category')->order_by('rand()')->get('crops_')->result();
 	 		$fullName=$this->input->post('first_name').' '.$this->input->post('last_name');
 	 		$address=array(
 	 							"fullName"=>$fullName,
@@ -57,7 +64,7 @@
 	 		$deliveryAddress=serialize($address);
 	 		// print_r($this->session->deliveryAddress);
 	 		$user_id=11;	
-	 		if($this->input->post('payumoney')){
+	 		if($this->input->post('paymentMethod')){
 	 			//Implement Payment Gateway
 	 			$paymentMode=2;
 	 		}else{
@@ -66,10 +73,7 @@
 	 		}
 	 		// echo $paymentMode;
 	 		// die(json_encode($_POST));
-	 		$data['categories']=$this->db->order_by('rand()')->get('categories')->result();
-	 		// echo 'good to go ';
-	 		$data['webDetail']=$this->db->get('website_name_logo')->row();
-	 		$data['gallery_']=$this->db->join('categories','categories.id= crops_.veg_category')->order_by('rand()')->get('crops_')->result();
+	 		// die;
 
 	 		$cartItems=$this->cart->contents();
 	 		$productIdArr=array();
@@ -99,9 +103,11 @@
 	 							);
 	 		// print_r($orderDetails);
 	 		// die;
+	 		$orderId=0;
 	 		// if($this->session->userdata('deliveryAddress')){
 	 			if(count($this->db->where($orderDetails)->get('orders_')->result())==0){
 		 			if($this->db->insert('orders_',$orderDetails)){
+		 				$orderId=$this->db->insert_id();
 		 				$this->session->set_flashdata('msg','Order Placed.');
 		 				$this->cart->destroy();
 		 				// $this->session->unset_userdata('deliveryAddress');
@@ -110,16 +116,28 @@
 		 			}
 		 		}else{
 		 			$this->session->set_flashdata('msg','Order Already Exists.');
-		 		}	
+		 		}
+		 	if($this->input->post('paymentMethod')){
+	 			// echo 'Implement Payment Gateway';
+	 			if($orderId!=0){
+	 				$this->load->view('pages/payindex',$orderId);	
+	 			}else{
+	 				echo 'Server Error';
+	 			}
+	 			$this->load->view('pages/payindex');
+	 		}else{
+	 			echo 'Implement Cash On Delivery';
+	 			// $this->session->set_flashdata('msg');
+		 		// // print_r($orderDetails);
+		 		// $this->load->view('layout/header',$data);
+		 		// $this->load->view('pages/orderPlaced');
+		 		// $this->load->view('layout/footer');
+	 		}	
 	 		// }
 	 		// else{
 	 		// 	redirect('Home');
 	 		// }
-	 		  $this->session->set_flashdata('msg');
-	 		// print_r($orderDetails);
-	 		$this->load->view('layout/header',$data);
-	 		$this->load->view('pages/orderPlaced');
-	 		$this->load->view('common/footer');
+	 		  
 	 	}
 	 	
 	 	public function addToCart(){

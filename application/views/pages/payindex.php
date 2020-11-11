@@ -1,10 +1,17 @@
 <?php
-//  echo 'Emaou:'.$eventData[0]->amount_to_pay;
-// print_r($eventData);
 
+
+echo $orderId=8;
+$orderDetails=$this->db->where('order_id',$orderId)->get('orders_')->row();
+ // echo 'Emaou:'.$eventData[0]->amount_to_pay;
+$cd=unserialize($orderDetails->cart_details);
+$ud=unserialize($orderDetails->deli_add);
+print_r($orderDetails);
+print_r($cd);
+print_r($ud);
 $merchantKey='4109Q5HD';
 $saltKey='c4CdbRKEu4';
-
+// echo $cd[0]['order_amount'];
 if(strcasecmp($_SERVER['REQUEST_METHOD'], 'POST') == 0){
 	//Request hash
 	$contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : '';	
@@ -89,8 +96,8 @@ color="e34524" bolt-logo="http://boltiswatching.com/wp-content/uploads/2015/09/B
                                <label>Transaction/Order ID:</label>
                                 <input type="text" id="txnid" class="form-control" name="txnid" placeholder="Transaction ID" value="<?php echo  "REF-" . date('dmYhis')?>" />
                                 <label>Amount:</label>
-                                <input type="text" id="amount" class="form-control" name="amount" placeholder="Amount" value="<?=$eventData[0]->amount_to_pay?>" />    
-                                <input type="hidden" id="pinfo" class="form-control" name="pinfo" placeholder="Product Info" value="<?=$eventData[0]->event_id?>" />
+                                <input type="text" id="amount" class="form-control" name="amount" placeholder="Amount" value="<?=$cd[0]['order_amount']?>" />    
+                                <input type="hidden" id="pinfo" class="form-control" name="pinfo" placeholder="Product Info" value="<?=$orderDetails->order_id?>" />
                                 <label>First Name:</label>
                                 <input type="text" id="fname" class="form-control" name="fname" placeholder="First Name" value="" />
                                 <label>Email ID:</label>
