@@ -1,16 +1,5 @@
 <?php
 
- echo $orderId=8;
-$orderDetails=$this->db->where('order_id',$orderId)->get('orders_')->row();
- // echo 'Emaou:'.$eventData[0]->amount_to_pay;
-$cd=unserialize($orderDetails->cart_details);
-$ud=unserialize($orderDetails->deli_add);
-// print_r($orderDetails);
-// print_r($cd);
-// print_r($ud);
-$merchantKey='4109Q5HD';
-$saltKey='c4CdbRKEu4';
-// echo $cd[0]['order_amount'];
 if(strcasecmp($_SERVER['REQUEST_METHOD'], 'POST') == 0){
 	//Request hash
 	$contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : '';	
@@ -28,8 +17,7 @@ if(strcasecmp($_SERVER['REQUEST_METHOD'], 'POST') == 0){
 function getCallbackUrl()
 {
 	$protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-// 	return $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] .base_url('Payments/response');
-	return base_url('Payments/response');
+	return $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] . 'response.php';
 }
 
 ?>
@@ -38,7 +26,7 @@ function getCallbackUrl()
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
+<title>PayUmoney BOLT PHP7 Kit</title>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
@@ -49,7 +37,7 @@ function getCallbackUrl()
 color="e34524" bolt-logo="http://boltiswatching.com/wp-content/uploads/2015/09/Bolt-Logo-e14421724859591.png"></script>
 <!-- BOLT Production/Live //-->
 <!--// script id="bolt" src="https://checkout-static.citruspay.com/bolt/run/bolt.min.js" bolt-color="e34524" bolt-logo="http://boltiswatching.com/wp-content/uploads/2015/09/Bolt-Logo-e14421724859591.png"></script //-->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 </head>
 <style type="text/css">
 	.main {
@@ -65,65 +53,73 @@ color="e34524" bolt-logo="http://boltiswatching.com/wp-content/uploads/2015/09/B
 	}
 </style>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 offset-md-3 my-3" >
-                <div class="card">
-                    <div class="card-header">
-                        <img src="<?=base_url()?>assets/payumoney.png" />
-                    </div>
-                    <div class="card-body">
-                        <div class="main">
-                        	
-                            <div>
-                            	<h4>Registration Fee</h4>
-                            	<hr>
-                            </div>
-                        	<form action="#" id="payment_form">
-                                <input type="hidden" id="udf5" name="udf5" value="BOLT_KIT_PHP7" />
-                                <input type="hidden" id="surl" name="surl" value="<?php echo getCallbackUrl(); ?>" />
-                                <!--<div class="dv">-->
-                                <!--<span class="text"><label>Merchant Key:</label></span>-->
-                                <!--<span><input type="text" id="key" name="key" placeholder="Merchant Key" value="<?=$merchantKey?>" /></span>-->
-                                <!--</div>-->
-                                
-                                <!--<div class="dv">-->
-                                <!--<span class="text"><label>Merchant Salt:</label></span>-->
-                                <!--<span><input type="text" id="salt" name="salt" placeholder="Merchant Salt" value="<?=$saltKey?>" /></span>-->
-                                <!--</div>-->
-                                
-                               <label>Transaction/Order ID:</label>
-                                <input type="text" id="txnid" class="form-control" name="txnid" placeholder="Transaction ID" value="<?php echo  "REF-" . date('dmYhis')?>" />
-                                <label>Amount:</label>
-                                <input type="text" id="amount" class="form-control" name="amount" placeholder="Amount" value="<?=$cd[0]['order_amount']?>" />    
-                                <input type="hidden" id="pinfo" class="form-control" name="pinfo" placeholder="Product Info" value="<?=$orderDetails->order_id?>" />
-                                <label>First Name:</label>
-                                <input type="text" id="fname" class="form-control" name="fname" placeholder="First Name" value="" />
-                                <label>Email ID:</label>
-                                <input type="text" id="email" class="form-control" name="email" placeholder="Email ID" value="" />
-                                <label>Mobile/Cell Number:</label>
-                                <input type="text" id="mobile" class="form-control" name="mobile" placeholder="Mobile/Cell Number" value="" />
-                                <!--<label>Hash:</label>-->
-                                <input type="hidden" id="hash" class="form-control" name="hash" placeholder="Hash" value="" />
-                                <hr>
-                                <input type="submit" class="btn btn-info" value="Pay" onclick="launchBOLT(); return false;" />
-                        	</form>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
+<div class="main">
+	<div>
+    	<img src="images/payumoney.png" />
     </div>
-
+    <div>
+    	<h3>PHP7 BOLT Kit</h3>
+    </div>
+	<form action="#" id="payment_form">
+    <input type="hidden" id="udf5" name="udf5" value="BOLT_KIT_PHP7" />
+    <input type="hidden" id="surl" name="surl" value="<?php echo getCallbackUrl(); ?>" />
+    <div class="dv">
+    <span class="text"><label>Merchant Key:</label></span>
+    <span><input type="text" id="key" name="key" placeholder="Merchant Key" value="4109Q5HD" /></span>
+    </div>
+    
+    <div class="dv">
+    <span class="text"><label>Merchant Salt:</label></span>
+    <span><input type="text" id="salt" name="salt" placeholder="Merchant Salt" value="c4CdbRKEu4" /></span>
+    </div>
+    
+    <div class="dv">
+    <span class="text"><label>Transaction/Order ID:</label></span>
+    <span><input type="text" id="txnid" name="txnid" placeholder="Transaction ID" value="<?php echo  "Txn" . rand(10000,99999999)?>" /></span>
+    </div>
+    
+    <div class="dv">
+    <span class="text"><label>Amount:</label></span>
+    <span><input type="text" id="amount" name="amount" placeholder="Amount" value="6.00" /></span>    
+    </div>
+    
+    <div class="dv">
+    <span class="text"><label>Product Info:</label></span>
+    <span><input type="text" id="pinfo" name="pinfo" placeholder="Product Info" value="P01,P02" /></span>
+    </div>
+    
+    <div class="dv">
+    <span class="text"><label>First Name:</label></span>
+    <span><input type="text" id="fname" name="fname" placeholder="First Name" value="" /></span>
+    </div>
+    
+    <div class="dv">
+    <span class="text"><label>Email ID:</label></span>
+    <span><input type="text" id="email" name="email" placeholder="Email ID" value="" /></span>
+    </div>
+    
+    <div class="dv">
+    <span class="text"><label>Mobile/Cell Number:</label></span>
+    <span><input type="text" id="mobile" name="mobile" placeholder="Mobile/Cell Number" value="" /></span>
+    </div>
+    
+    <div class="dv">
+    <span class="text"><label>Hash:</label></span>
+    <span><input type="text" id="hash" name="hash" placeholder="Hash" value="" /></span>
+    </div>
+    
+    
+    <div><input type="submit" value="Pay" onclick="launchBOLT(); return false;" /></div>
+	</form>
+</div>
 <script type="text/javascript"><!--
 $('#payment_form').bind('keyup blur', function(){
 	$.ajax({
-          url: '<?=base_url('Payments/Payumoneyyyy/')?>',
+          url: '<?=base_url('Payments/Money')?>,
           type: 'post',
           data: JSON.stringify({ 
-            key: '<?=$merchantKey?>',
-			salt: '<?=$saltKey?>',
+            key: $('#key').val(),
+			salt: $('#salt').val(),
 			txnid: $('#txnid').val(),
 			amount: $('#amount').val(),
 		    pinfo: $('#pinfo').val(),
@@ -150,7 +146,7 @@ $('#payment_form').bind('keyup blur', function(){
 function launchBOLT()
 {
 	bolt.launch({
-	key: '<?=$merchantKey?>',
+	key: $('#key').val(),
 	txnid: $('#txnid').val(), 
 	hash: $('#hash').val(),
 	amount: $('#amount').val(),
@@ -169,7 +165,7 @@ function launchBOLT()
 		//Salt is passd here for demo purpose only. For practical use keep salt at server side only.
 		var fr = '<form action=\"'+$('#surl').val()+'\" method=\"post\">' +
 		'<input type=\"hidden\" name=\"key\" value=\"'+BOLT.response.key+'\" />' +
-		'<input type=\"hidden\" name=\"salt\" value=\"'+'<?=$merchantKey?>'+'\" />' +
+		'<input type=\"hidden\" name=\"salt\" value=\"'+$('#salt').val()+'\" />' +
 		'<input type=\"hidden\" name=\"txnid\" value=\"'+BOLT.response.txnid+'\" />' +
 		'<input type=\"hidden\" name=\"amount\" value=\"'+BOLT.response.amount+'\" />' +
 		'<input type=\"hidden\" name=\"productinfo\" value=\"'+BOLT.response.productinfo+'\" />' +

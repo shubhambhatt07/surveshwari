@@ -14,6 +14,13 @@ class Payments extends CI_Controller
 	 		$this->load->view('pages/payindex');
 	 		$this->load->view('layout/footer');
 	}
+	public function Money()
+	{
+		echo "run";
+			// $this->load->view('layout/header');
+	 		 $this->load->view('pages/money');
+	 		// $this->load->view('layout/footer');
+	}
 	
 	public function DoPayments()
 	{

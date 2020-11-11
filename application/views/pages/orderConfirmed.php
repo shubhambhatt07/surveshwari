@@ -25,7 +25,7 @@
     <!-- End All Title Box -->
 
     <!-- Start Cart  -->
-    <form action="<?=base_url('Payments/Payumoneyyyy')?>" method="post" enctype="multipart/form-data">
+    <form action="<?=base_url('Payments/Payumoneyyyy')?>" method="post" >
     <div class="cart-box-main">
         <div class="container">
             <?php 
@@ -124,6 +124,7 @@
         </div>
     </div>
      </form>
+     <a href="<?=base_url('Payments/Payumoneyyyy')?>">test<a>
     <!-- End Cart -->
 
   

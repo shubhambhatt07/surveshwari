@@ -192,10 +192,10 @@
                                 </div>
                                     </div>
                                     
-                                <!-- <div class="col-12 d-flex shopping-box" id="placOrde"> <a href="<?=base_url('Cart/orderConfirmation')?>" class="ml-auto default-btn  btn hvr-hover">Place Order</a> 
-                                </div> -->
+                                <div class="col-12 d-flex shopping-box" id="placOrde"> <a href="<?=base_url('Cart/orderConfirmation')?>" class="ml-auto default-btn  btn hvr-hover">Place Order</a> 
+                                </div>
                               
-                                    <input type="submit" class="default-btn order-btn" value="Place Order">
+                                    <!-- <input type="submit" class="default-btn order-btn" value="Place Order"> -->
                                     
                                 </div>
                             </div>
